@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Learning Techniques - Programmind</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body.dark {
+            --bg: #0f0f0f;
+            --card: #1c1c1c;
+            --text: #eee;
+            --sub: #aaa;
+        }
+
+        /* ==== BASE ==== */
+        body {
+            background: var(--bg);
+            color: var(--text);
+            margin: auto;
+        }
+
+        main {
+            margin: auto;
+            max-width: 800px;
+        }
+
+        /* ==== TITLE ==== */
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--sub);
+            margin-bottom: 25px;
+        }
+
+        /* ==== SECTION ==== */
+        section {
+            background: var(--card);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, .05);
+        }
+
+        /* ==== TEXT ==== */
+        p {
+            text-indent: 2em;
+            line-height: 1.8;
+            text-align: justify;
+            color: var(--sub);
+        }
+
+        /* ==== DETAILS ==== */
+        details {
+            background: rgba(0, 0, 0, .03);
+            border-radius: 10px;
+            margin: 8px 0;
+            overflow: hidden;
+        }
+
+        summary {
+            cursor: pointer;
+            padding: 10px;
+            font-weight: 500;
+        }
+
+        details[open] summary {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* ==== LIST ==== */
+        ol {
+            padding-left: 18px;
+        }
+
+        ul.alphabet {
+            margin-left: 20px;
+            list-style: lower-alpha;
+        }
+
+        /* ==== TAG ==== */
+        .tag {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        /* ==== HOVER ==== */
+        section:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Programmind</div>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html">Blog</a>
+            <a href="https://whois65.github.io/portfolio/">About</a>
+            <a href="https://whois65.github.io/portfolio/#contact">Contact</a>
+            <button class="toggle" onclick="toggleDark()">🌙</button>
+        </nav>
+
+        <div class="hamburger" onclick="document.getElementById('nav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+    <main>
+        <h1>Learn Smarter, Not Harder</h1>
+        <p class="subtitle">Simple strategies to make learning faster, easier, and more effective.</p>
+
+        <!-- ===== MINDSET ===== -->
+        <section>
+            <span class="tag">Mindset</span>
+            <h2>Make Learning Enjoyable</h2>
+
+            <ol>
+
+                <li>
+                    <details>
+                        <summary>Learning is a need, not an obligation</summary>
+                        <p>Shift your mindset from “I have to study” to “I need to study.” This small change makes
+                            learning
+                            feel natural instead of forced.</p>
+                    </details>
+                </li>
+
+                <li>End your study session with a small reward 🎯</li>
+
+                <li>
+                    <details>
+                        <summary>Turn learning into a game</summary>
+                        <p>Set challenges like time limits, target scores, or levels. This makes studying more engaging
+                            and
+                            less boring.</p>
+                    </details>
+                </li>
+
+                <li>Follow your curiosity and focus on understanding, not memorization.</li>
+
+            </ol>
+        </section>
+
+        <!-- ===== TECHNIQUE ===== -->
+        <section>
+            <span class="tag">Technique</span>
+            <h2>Effective Learning Methods</h2>
+
+            <ol>
+
+                <li>
+                    <details>
+                        <summary>Spaced Repetition</summary>
+                        <p>Review material over increasing intervals to move it into long-term memory.</p>
+                    </details>
+                </li>
+
+                <li>
+                    <details>
+                        <summary>Retrieval Practice</summary>
+                        <p>Don’t just reread—force your brain to recall information without looking.</p>
+
+                        <ul class="alphabet">
+                            <li>Read the material</li>
+                            <li>Close your notes</li>
+                            <li>Write what you remember</li>
+                            <li>Check and fix mistakes</li>
+                        </ul>
+
+                    </details>
+                </li>
+
+                <li>
+                    <details>
+                        <summary>Interleaving</summary>
+                        <p>Mix different topics in one study session to improve flexibility and deeper understanding.
+                        </p>
+                    </details>
+                </li>
+
+                <li>
+                    <details>
+                        <summary>Generation</summary>
+                        <p>Explain the material in your own words. This strengthens understanding much more than passive
+                            reading.</p>
+                    </details>
+                </li>
+
+            </ol>
+        </section>
+
+        <!-- ===== SKILL ===== -->
+        <section>
+            <span class="tag">Skill</span>
+            <h2>Learn Any Skill Faster</h2>
+
+            <ol>
+
+                <li>
+                    <details>
+                        <summary>Deconstruct</summary>
+                        <p>Break the skill into smaller subskills to make it easier to learn.</p>
+                    </details>
+                </li>
+
+                <li>
+                    <details>
+                        <summary>Learn</summary>
+                        <p>Focus on mastering each subskill step by step.</p>
+                    </details>
+                </li>
+
+                <li>
+                    <details>
+                        <summary>Remove Barriers</summary>
+                        <p>Eliminate distractions, fear, and anything that slows your progress.</p>
+                    </details>
+                </li>
+
+                <li>
+                    <details>
+                        <summary>Practice</summary>
+                        <p>Spend at least 20 focused hours on the most important parts.</p>
+                    </details>
+                </li>
+
+            </ol>
+        </section>
+
+        <!-- ===== MISTAKES ===== -->
+        <section>
+            <span class="tag">Mistakes</span>
+            <h2>Common Learning Mistakes</h2>
+
+            <ol>
+                <li>Skipping the fundamentals.</li>
+                <li>Using the wrong learning order.</li>
+                <li>Focusing on memorization instead of understanding.</li>
+            </ol>
+        </section>
+
+        <!-- ===== AI ===== -->
+        <section>
+            <span class="tag">AI</span>
+            <h2>Learning with AI</h2>
+
+            <ul>
+                <li>Use AI to explain difficult concepts.</li>
+                <li>Ask for practice questions.</li>
+                <li>Use it as a tutor—not a shortcut.</li>
+            </ul>
+        </section>
+    </main>
+<footer>
+        <p>© 2026 <strong>Programmind</strong>. All rights reserved.</p>
+    </footer>
+    <script src="dark.js"></script>
+
+</body>
+
+</html>

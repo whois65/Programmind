@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Lessons - Programmind</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+            transition: all 0.2s ease-in-out;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ===== HERO ===== */
+        .header {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .toc {
+            max-width: 900px;
+            margin: auto;
+            background: var(--card);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 25px;
+        }
+
+        .toc h3 {
+            margin-bottom: 10px;
+            color: #4f46e5;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: var(--text);
+            transition: 0.2s;
+        }
+
+        .toc a:hover {
+            color: #4f46e5;
+            padding-left: 5px;
+        }
+
+        /* ===== CONTAINER ===== */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        /* ===== CARD SECTION ===== */
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        /* ===== LIST ===== */
+        ul,
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* ===== QUOTE ===== */
+        q {
+            font-style: italic;
+            color: var(--muted);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--muted);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media(max-width:600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Programmind</div>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html">Blog</a>
+            <a href="https://whois65.github.io/portfolio/">About</a>
+            <a href="https://whois65.github.io/portfolio/#contact">Contact</a>
+            <button class="toggle" onclick="toggleDark()">🌙</button>
+        </nav>
+
+        <div class="hamburger" onclick="document.getElementById('nav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="header">
+            <h1>Success & Life Lessons</h1>
+            <p>Simple principles to improve your life, mindset, and future.</p>
+        </div>
+        <!-- ===== TABLE OF CONTENTS ===== -->
+        <div class="toc">
+            <h3>Contents</h3>
+            <ul>
+                <li><a href="#important">Important Things in Life</a></li>
+                <li><a href="#improve">How to Improve Your Life</a></li>
+                <li><a href="#brain">Train Your Brain</a></li>
+                <li><a href="#college">College Tips</a></li>
+                <li><a href="#mistakes">Fatal Mistakes</a></li>
+                <li><a href="#respect">How to Be Respected</a></li>
+                <li><a href="#habits">Best Habits</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+
+            <div class="card" id="important">
+                <h2>Important Things in Life</h2>
+                <ol>
+                    <li>Have a clear life purpose</li>
+                    <li>Do what matters, not just what you like</li>
+                    <li>Avoid doing things based on mood</li>
+                    <li>Limit gaming or scrolling to under 15 minutes</li>
+                    <li>Don’t let emotions affect your duties and responsibilities</li>
+                    <li>Financial management</li>
+                    <li>Invest after building sufficient income</li>
+                    <li>Don’t buy things more expensive than your income before saving</li>
+                    <li>Don’t think you are smarter than others</li>
+                    <li>Don’t be afraid to fail <q>Failure is a lesson</q></li>
+                </ol>
+            </div>
+
+            <div class="card" id="improve">
+                <h2>How to Improve Your Life</h2>
+                <ul>
+                    <li>Have a clear life goal</li>
+                    <li>Use the SMART method (Specific, Measurable, Actionable, Realistic, Timely)</li>
+                    <li>Stop making excuses</li>
+                    <li>Be brave enough to take calculated risks</li>
+                    <li>Prioritize movement and growth</li>
+                    <li>Manage finances: track all income and expenses in detail; money is not the goal, but a tool</li>
+                </ul>
+            </div>
+
+            <div class="card" id="brain">
+                <h2>Train Your Brain</h2>
+                <ul>
+                    <li>Procrastination is not an option</li>
+                    <li>Starting is hard, so prepare everything in advance</li>
+                    <li>Use the 2-minute rule</li>
+                    <li>Count 1–5 before starting</li>
+                    <li>Reward yourself after completing tasks</li>
+                </ul>
+            </div>
+
+            <div class="card" id="college">
+                <h2>College Tips</h2>
+                <ul>
+                    <li>Join internships</li>
+                    <li>Join organizations</li>
+                    <li>Learn additional skills</li>
+                    <li>Do freelance work</li>
+                    <li>Build connections</li>
+                </ul>
+            </div>
+
+            <div class="card" id="mistakes">
+                <h2>Fatal Mistakes</h2>
+                <ul>
+                    <li>Lack of experience</li>
+                    <li>Wasteful lifestyle</li>
+                    <li>Debt or online loans</li>
+                    <li>Investing too late</li>
+                    <li>Bad social circle</li>
+                </ul>
+            </div>
+
+            <div class="card" id="respect">
+                <h2>How to Be Respected</h2>
+                <ol>
+                    <li>Never be afraid to make eye contact</li>
+                    <li>Walk with confidence</li>
+                    <li>Relax and be yourself</li>
+                    <li>Pay attention when others are speaking</li>
+                    <li>Smile</li>
+                    <li>Show genuine interest in others</li>
+                    <li>Avoid being fake</li>
+                    <li>Talk less about yourself</li>
+                    <li>Dress neatly and attractively</li>
+                    <li>Do something unexpected</li>
+                    <li>Speak slowly and kindly</li>
+                </ol>
+            </div>
+
+            <div class="card" id="habits">
+                <h2>Best Habits</h2>
+                <ol>
+                    <li>Wake up earlier</li>
+                    <li>Read 10 pages a day</li>
+                    <li>Use the 2-minute rule</li>
+                    <li>Plan tomorrow the night before</li>
+                    <li>Say no more often</li>
+                    <li>Control your spending</li>
+                    <li>Remove distractions weekly after reflection</li>
+                    <li>Smile</li>
+                    <li>Use a timer to improve focus</li>
+                    <li>Write a gratitude sentence daily</li>
+                    <li>Compliment one person each day</li>
+                    <li>Avoid your phone 30 minutes before sleep</li>
+                    <li>Stretch for 2 minutes every hour</li>
+                    <li>Drink water immediately after waking up</li>
+                    <li>Organize your workspace</li>
+                    <li>Stand for 10 minutes every hour</li>
+                    <li>Meditate for 5 minutes daily</li>
+                    <li>Celebrate small or big wins before sleeping</li>
+                    <li>Write your desires daily</li>
+                    <li>Limit sugar intake</li>
+                    <li>Walk outside for 10 minutes daily</li>
+                    <li>Make your bed after waking up</li>
+                    <li>Clear negative thoughts, stay positive</li>
+                    <li>Affirm positive things in front of the mirror</li>
+                    <li>Celebrate progress</li>
+                    <li>Limit watching the news</li>
+                    <li>Eat vegetables daily</li>
+                    <li>Learn new vocabulary every day</li>
+                    <li>Take deep breaths when overwhelmed or tired</li>
+                    <li>Set 3 small goals every morning</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+    <footer>
+        © 2026 <b>Programmind</b> — Keep improving
+    </footer>
+    <script src="dark.js"></script>
+</body>
+
+</html>

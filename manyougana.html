@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>万葉仮名 (Manyōgana)</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: all .3s ease;
+        }
+
+        body {
+            line-height: 1.7;
+            background: #fafafa;
+            color: #222;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            border-left: 4px solid #333;
+            padding-left: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        hr {
+            margin: 30px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        th {
+            background: #333;
+            color: white;
+            font-weight: normal;
+        }
+
+        td,
+        th {
+            text-align: center;
+            padding: 12px;
+        }
+
+        tr:nth-child(even) {
+            background: #f5f5f5;
+        }
+
+        tr:hover {
+            background: #eaeaea;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 30px 20px;
+            text-align: center;
+            background: #111;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        footer strong {
+            color: #fff;
+        }
+
+        /* DARK MODE */
+        .dark body {
+            background: #121212;
+            color: #eee;
+        }
+
+        .dark table {
+            background: #1e1e1e;
+        }
+
+        .dark tr:nth-child(even) {
+            background: #2a2a2a;
+        }
+
+        .dark tr:hover {
+            background: #333;
+        }
+
+        .dark p {
+            color: #ccc;
+        }
+
+        .dark h2 {
+            border-left: 4px solid #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Programmind</div>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html">Blog</a>
+            <a href="https://whois65.github.io/portfolio/">About</a>
+            <a href="https://whois65.github.io/portfolio/#contact">Contact</a>
+            <button class="toggle" onclick="toggleDark()">🌙</button>
+        </nav>
+
+        <div class="hamburger" onclick="document.getElementById('nav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+
+    <div class="container">
+
+        <h1>万葉仮名 (Manyōgana)</h1>
+
+        <h2>Definition</h2>
+        <p>
+            Manyōgana (万葉仮名) is an early Japanese writing system in which Chinese characters (kanji) were used purely
+            for their phonetic value. Instead of representing meaning, these characters were selected to approximate the
+            sounds of the Japanese language.
+        </p>
+
+        <p>
+            This system played a crucial role in the development of the Japanese writing system. Over time, repeated
+            phonetic usage of kanji led to the creation of two simplified syllabaries: hiragana and katakana.
+        </p>
+
+        <p>
+            Hiragana evolved from the cursive (草書, sōsho) forms of entire kanji, resulting in smooth and rounded
+            characters. In contrast, katakana originated from selected components of kanji, giving them a more angular
+            and structured appearance.
+        </p>
+
+        <hr />
+
+        <h2>Hiragana Origins (from Manyōgana)</h2>
+        <p>
+            The table below shows representative kanji used in Manyōgana that later evolved into modern hiragana.
+        </p>
+
+        <!-- tabel tetap sama -->
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Row</th>
+                <th>Hiragana</th>
+                <th>Manyōgana (Kanji Origin)</th>
+            </tr>
+
+            <tr>
+                <td>A</td>
+                <td>あ い う え お</td>
+                <td>安 以 宇 衣 於</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>か き く け こ</td>
+                <td>加 幾 久 計 己</td>
+            </tr>
+            <tr>
+                <td>S</td>
+                <td>さ し す せ そ</td>
+                <td>左 之 寸 世 曽</td>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>た ち つ て と</td>
+                <td>太 知 川 天 止</td>
+            </tr>
+            <tr>
+                <td>N</td>
+                <td>な に ぬ ね の</td>
+                <td>奈 仁 奴 祢 乃</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td>は ひ ふ へ ほ</td>
+                <td>波 比 不 部 保</td>
+            </tr>
+            <tr>
+                <td>M</td>
+                <td>ま み む め も</td>
+                <td>末 美 武 女 毛</td>
+            </tr>
+            <tr>
+                <td>Y</td>
+                <td>や ゆ よ</td>
+                <td>也 由 与</td>
+            </tr>
+            <tr>
+                <td>R</td>
+                <td>ら り る れ ろ</td>
+                <td>良 利 留 礼 呂</td>
+            </tr>
+            <tr>
+                <td>W</td>
+                <td>わ ゐ ゑ を</td>
+                <td>和 為 恵 遠</td>
+            </tr>
+            <tr>
+                <td>N</td>
+                <td>ん</td>
+                <td>无 / 尓</td>
+            </tr>
+        </table>
+        <hr />
+
+        <h2>Katakana Origins</h2>
+        <p>
+            Katakana characters were derived by extracting parts of kanji used in Manyōgana. This process created a more
+            compact and geometric writing system, primarily used today for foreign words, emphasis, and technical terms.
+        </p>
+
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Row</th>
+                <th>Katakana</th>
+                <th>Kanji Origin</th>
+            </tr>
+
+            <tr>
+                <td>A</td>
+                <td>ア イ ウ エ オ</td>
+                <td>阿 伊 宇 江 於</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>カ キ ク ケ コ</td>
+                <td>加 幾 久 計 己</td>
+            </tr>
+            <tr>
+                <td>S</td>
+                <td>サ シ ス セ ソ</td>
+                <td>散 之 須 世 曽</td>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>タ チ ツ テ ト</td>
+                <td>多 千 川 天 止</td>
+            </tr>
+            <tr>
+                <td>N</td>
+                <td>ナ ニ ヌ ネ ノ</td>
+                <td>奈 仁 奴 祢 乃</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td>ハ ヒ フ ヘ ホ</td>
+                <td>八 比 不 部 保</td>
+            </tr>
+            <tr>
+                <td>M</td>
+                <td>マ ミ ム メ モ</td>
+                <td>末 三 牟 女 毛</td>
+            </tr>
+            <tr>
+                <td>Y</td>
+                <td>ヤ ユ ヨ</td>
+                <td>也 由 与</td>
+            </tr>
+            <tr>
+                <td>R</td>
+                <td>ラ リ ル レ ロ</td>
+                <td>良 利 流 礼 呂</td>
+            </tr>
+            <tr>
+                <td>W</td>
+                <td>ワ ヲ ン</td>
+                <td>和 遠 尓</td>
+            </tr>
+        </table>
+
+        <hr />
+
+        <h2>Important Notes</h2>
+
+        <p>
+            In Manyōgana, a single syllable could be represented by multiple kanji. For example, the sound "ka" could be
+            written using 加, 可, 香, and many others.
+        </p>
+
+        <p>
+            Modern kana systems are standardized forms that emerged from these variations, making reading and writing
+            significantly more efficient.
+        </p>
+
+        <p>
+            Understanding Manyōgana provides valuable insight into the historical evolution of the Japanese writing
+            system and helps learners better appreciate the structure of kana.
+        </p>
+
+    </div>
+
+    <footer>
+        <p>© 2026 <strong>Programmind</strong>. All rights reserved.</p>
+        <p>Built with passion for language learning 🚀</p>
+    </footer>
+    <script>
+        function toggleDark() {
+            document.body.classList.toggle("dark");
+            localStorage.setItem("darkMode",
+                document.body.classList.contains("dark"));
+        }
+
+        if (localStorage.getItem("darkMode") === "true") {
+            document.body.classList.add("dark");
+        }
+    </script>
+</body>
+
+</html>

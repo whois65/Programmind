@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmind</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        
+
+        /* ==== HERO ==== */
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            opacity: 0.9;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        /* ==== BUTTON ==== */
+        .btn {
+            margin-top: 15px;
+            padding: 8px 18px;
+            border-radius: 8px;
+            border: none;
+            color: var(--accent);
+            background: var(--bg);
+            cursor: pointer;
+        }
+
+        /* ==== ARTICLES ==== */
+        section {
+            padding: 20px;
+        }
+
+        .articles {
+            display: grid;
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .article {
+            display: flex;
+            gap: 15px;
+            background: var(--card);
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, .05);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn .5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .article:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+        }
+
+        .article img {
+            width: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .container p {
+            color: var(--sub);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ==== TAG ==== */
+        .tags {
+            gap: 10px;
+            display: flex;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            background: var(--accent);
+            color: #fff;
+            font-size: 12px;
+        }
+
+        /* ==== BUTTON ==== */
+        .container button {
+            margin-top: auto;
+            align-self: flex-start;
+            padding: 6px 14px;
+            border-radius: 6px;
+            border: 1px solid var(--accent);
+            background: none;
+            cursor: pointer;
+            color: var(--accent);
+        }
+
+        .container button:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* ==== DARK BUTTON ==== */
+        .toggle {
+            padding: 5px 10px;
+            border-radius: 6px;
+            border: 1px solid var(--text);
+            background: none;
+            cursor: pointer;
+        }
+
+        /* ==== MOBILE ==== */
+        @media(max-width:768px) {
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                flex-direction: column;
+                background: var(--card);
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .article {
+                flex-direction: column;
+            }
+
+            .article img {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Programmind</div>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html">Blog</a>
+            <a href="https://whois65.github.io/portfolio/">About</a>
+            <a href="https://whois65.github.io/portfolio/#contact">Contact</a>
+            <button class="toggle" onclick="toggleDark()">🌙</button>
+        </nav>
+
+        <div class="hamburger" onclick="document.getElementById('nav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <h1>Learning today to build the future</h1>
+            <p>Exploring technology, languages, and the future—one step at a time.</p>
+            <button class="btn" onclick="document.getElementById('articles').scrollIntoView({behavior:'smooth'})">
+                Start Reading
+            </button>
+        </section>
+
+        <!-- ARTICLES -->
+        <section id="articles" class="articles">
+            <h2>Top Posts</h2>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 <strong>Programmind</strong>. All rights reserved.</p>
+    </footer>
+    <script>
+
+        let contents = [
+            {
+                title: "Best learning technique",
+                image: "article0.jpg",
+                tag: ["Tips", "Learn"],
+                url: "best-learning-technique.html",
+                description: "Learning is not about getting tired. Find the best learning methods."
+            },
+            {
+                title: "Not money, But these are important",
+                image: "article1.jpg",
+                tag: ["Tips", "Life"],
+                url: "life.html",
+                description: "Small things we often ignore can have a huge impact on our lives."
+            },
+            {
+                title: "From zero to hero",
+                image: "article2.jpg",
+                tag: ["Tips", "Learn"],
+                url: "roadmap.html",
+                description: "Learning is not about talent, but about the right method and consistency."
+            },
+            {
+                title: "Quotes",
+                image: "",
+                tag: ["Tips", "Learn", "Quotes"],
+                url: "quotes.html",
+                description: "My quotes"
+            },
+            {
+                title: "Manyougana (万葉仮名)",
+                image: "",
+                tag: ["History", "Japan"],
+                url: "manyougana.html",
+                description: "Manyōgana (万葉仮名) is an ancient Japanese writing system in which Chinese characters (kanji) were used to represent the sounds of the Japanese language. Instead of conveying meaning, these kanji were selected purely for their phonetic value."
+            }
+        ]
+
+        contents.forEach(content => {
+            const article = document.createElement("div");
+            let tags = ""
+            content.tag.forEach(tag => {
+                tags += `<div class="tag">${tag}</div>`
+            })
+            article.innerHTML = `<div class="article" style="cursor:pointer;"><img src="${content.image}"><div class="container"><h3>${content.title}</h3><p>${content.description}</p><span class="tags">${tags}</span><button onclick="window.location.href = '${content.url}'">Read More</button></div></div>`;
+            document.getElementById("articles").appendChild(article);
+        })
+
+
+
+        /* DARK MODE SAVE */
+        function toggleDark() {
+            document.body.classList.toggle("dark");
+            localStorage.setItem("darkMode",
+                document.body.classList.contains("dark"));
+        }
+
+        if (localStorage.getItem("darkMode") === "true") {
+            document.body.classList.add("dark");
+        }
+    </script>
+
+</body>
+
+</html>

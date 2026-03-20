@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Quotes</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .filter {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            background: #1e293b;
+            color: white;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #3b82f6;
+        }
+
+        .quotes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tag {
+            font-size: 12px;
+            color: #60a5fa;
+            margin-bottom: 5px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            font-size: 12px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Programmind</div>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html">Blog</a>
+            <a href="https://whois65.github.io/portfolio/">About</a>
+            <a href="https://whois65.github.io/portfolio/#contact">Contact</a>
+            <button class="toggle" onclick="toggleDark()">🌙</button>
+        </nav>
+
+        <div class="hamburger" onclick="document.getElementById('nav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+    <main>
+        <h1>Quotes Collection</h1>
+        <small id="count"></small>
+        <div class="filter" id="filterButtons"></div>
+        <div class="quotes-container" id="quotesContainer"></div>
+    </main>
+    <footer>
+        <p>© 2026 <b>Programmind</b>. All rights reserved.</p>
+    </footer>
+    <script>
+        const container = document.getElementById("quotesContainer");
+        const filterButtons = document.getElementById("filterButtons");
+        let countQuotes = 0;
+        fetch("quotes.json").then(res => res.json()).then(quotes => {
+            function displayQuotes(filterTag = "All") {
+                container.innerHTML = "";
+
+                const filtered =
+                    filterTag === "All"
+                        ? quotes
+                        : quotes.filter((q) => q.tag === filterTag);
+                filtered.forEach((q) => {
+                    const card = document.createElement("div");
+                    card.className = "card";
+                    card.innerHTML = ` <div class="tag">#${q.tag}</div> <div class="quote-text">"${q.quote}"</div> <div class="meta">${q.author} • ${q.date}</div> `;
+                    container.appendChild(card);
+                    countQuotes += 1
+                });
+                document.getElementById("count").textContent = `There are ${countQuotes} quotes`;
+                countQuotes = 0;
+            }
+
+            function generateFilters() {
+                const tags = ["All", ...new Set(quotes.map((q) => q.tag))];
+                tags.forEach((tag) => {
+                    const btn = document.createElement("button");
+                    btn.textContent = tag;
+                    btn.onclick = () => displayQuotes(tag);
+                    filterButtons.appendChild(btn);
+                });
+            }
+
+            generateFilters();
+            displayQuotes();
+        });
+    </script>
+    <script src="dark.js"></script>
+</body>
+
+</html>
