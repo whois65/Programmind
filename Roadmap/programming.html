@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming - Programmind</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #e2e8f0;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            background: #020617;
+            border-right: 1px solid #1e293b;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #38bdf8;
+        }
+
+        .lang-item {
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .lang-item:hover {
+            background: #1e293b;
+        }
+
+        .active {
+            background: #38bdf8;
+            color: black;
+        }
+
+        /* Main Content */
+        .main {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .title {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .desc {
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        pre {
+            background: #020617;
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+            border: 1px solid #1e293b;
+        }
+
+        code {
+            color: #22c55e;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                display: flex;
+                overflow-x: auto;
+            }
+
+            .lang-item {
+                min-width: 120px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2>Languages</h2>
+        <div id="progList"></div>
+    </div>
+
+    <div class="main">
+        <div class="title" id="progName">Select a Language</div>
+        <div class="desc" id="history">Click a language to see details.</div>
+
+        <div class="card">
+            <h3>Example Code</h3>
+            <pre><code id="syntax"></code></pre>
+        </div>
+    </div>
+
+    <script>
+        const progList = document.getElementById("progList");
+
+        const progLangs = {
+            "Python": {
+                history: "Created by Guido van Rossum, Python is known for simplicity and readability.",
+                example: "print('Hello World!')"
+            },
+            "JavaScript": {
+                history: "JavaScript powers the web. It runs in browsers and servers (Node.js).",
+                example: "console.log('Hello World!')"
+            },
+            "C": {
+                history: "One of the oldest and most influential programming languages.",
+                example: "#include <stdio.h>\nint main(){ printf('Hello World'); }"
+            },
+            "C++": {
+                history: "Extension of C with object-oriented features.",
+                example: "#include <iostream>\nint main(){ std::cout << 'Hello'; }"
+            },
+            "Java": {
+                history: "Popular for enterprise and Android development.",
+                example: "class Main { public static void main(String[] args){ System.out.println('Hello'); }}"
+            },
+            "Go": {
+                history: "Developed by Google for performance and simplicity.",
+                example: "package main\nimport \"fmt\"\nfunc main(){ fmt.Println('Hello') }"
+            },
+            "Ruby": {
+                history: "Focuses on simplicity and productivity.",
+                example: "puts 'Hello World'"
+            },
+            "Bash": {
+                history: "Shell scripting language for Linux/Unix systems.",
+                example: "echo 'Hello World'"
+            }
+        };
+
+        const languages = Object.keys(progLangs).sort();
+
+        languages.forEach(lang => {
+            const div = document.createElement("div");
+            div.textContent = lang;
+            div.className = "lang-item";
+
+            div.onclick = () => {
+                document.querySelectorAll('.lang-item').forEach(i => i.classList.remove('active'));
+                div.classList.add('active');
+
+                document.getElementById("progName").textContent = lang;
+                document.getElementById("history").textContent = progLangs[lang].history;
+                document.getElementById("syntax").textContent = progLangs[lang].example;
+            };
+
+            progList.appendChild(div);
+        });
+    </script>
+
+</body>
+
+</html>
