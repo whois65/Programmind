@@ -1,0 +1,76 @@
+[
+    {
+        "title": "Best learning technique",
+        "date": "",
+        "image": "article0.jpg",
+        "tag": ["Tips", "Learn"],
+        "id": "best-learning-technique",
+        "description": "Learning is not about getting tired. Find the best learning methods."
+    },
+    {
+        "title": "Not money, But these are important",
+        "date": "",
+        "image": "article1.jpg",
+        "tag": ["Tips", "Life"],
+        "id": "life",
+        "description": "Small things we often ignore can have a huge impact on our lives."
+    },
+    {
+        "title": "From zero to hero",
+        "date": "",
+        "image": "article2.jpg",
+        "tag": ["Tips", "Learn"],
+        "id": "roadmap",
+        "description": "Learning is not about talent, but about the right method and consistency."
+    },
+    {
+        "title": "Reading Tips",
+        "date": "",
+        "image": "reading.avif",
+        "tag": ["Tips", "Learn"],
+        "id": "read",
+        "description": "Many people reading in the wrong way that is why they forgot the contents not long after."
+    },
+    {
+        "title": "Financial Management",
+        "date": "",
+        "image": "finance.jpg",
+        "tag": [
+            "Tips","Learn", "Finance"],
+        "id": "finance",
+        "description": "Financial Management"
+    },
+    {
+        "title": "Quotes",
+        "date": "",
+        "image": "quotes.avif",
+        "tag": [
+            "Tips","Learn", "Quotes"],
+        "id": "quotes",
+        "description": "My quotes"
+    },
+    {
+        "title": "Ruangsunyi",
+        "date": "",
+        "image": "poem.jpg",
+        "tag": ["Poem", "Quotes"],
+        "id": "ruangsunyi(puisi)",
+        "description": "Poem Website."
+    },
+    {
+        "title": "Manyougana (万葉仮名)",
+        "date": "",
+        "image": "manyougana.png",
+        "tag": ["History", "Japan"],
+        "id": "manyougana",
+        "description": "Manyōgana (万葉仮名) is an ancient Japanese writing system in which Chinese characters (kanji) were used to represent the sounds of the Japanese language. Instead of conveying meaning, these kanji were selected purely for their phonetic value."
+    },
+    {
+        "title": "Markdown Editor",
+        "date": "",
+        "image": "https://markdown-here.com/img/icon256.png",
+        "tag": ["Tools", "Application"],
+        "id": "https://whois65.github.io/md-editor/",
+        "description": "A web application to write markdown, math equations, tables and much more"
+    }
+]

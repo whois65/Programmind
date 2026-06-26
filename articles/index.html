@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap - Programmind</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="../scripts/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+    <style>
+        main {
+            max-width: 900px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Programmind</div>
+
+        <nav class="nav-menu" id="nav">
+            <a href="../index.html">Home</a>
+            <a href="../index.html">Blog</a>
+            <a href="https://whois65.github.io/portfolio/">About</a>
+            <a href="https://whois65.github.io/portfolio/#contact">Contact</a>
+            <button class="toggle" onclick="toggleDark()"><i id="toggleDarkIcon" class="ti ti-moon"></i></button>
+        </nav>
+
+        <div class="hamburger" onclick="document.getElementById('nav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+    <main></main>
+    <footer>
+        <p>© 2026 <strong>Programmind</strong>. All rights reserved.</p>
+    </footer>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        let id = params.get("id") || "";
+        if (id !== "") {
+            fetch(id + ".json").then(res => res.json()).then(data => {
+                qs("main").innerHTML = data.content;
+                eval(qs("main").querySelector('script').textContent);
+            });
+        }
+    </script>
+</body>
+
+</html>

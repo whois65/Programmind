@@ -106,18 +106,8 @@
             color: #fff;
         }
 
-        /* ==== DARK BUTTON ==== */
-        .toggle {
-            padding: 5px 10px;
-            border-radius: 6px;
-            border: 1px solid var(--text);
-            background: none;
-            cursor: pointer;
-        }
-
         /* ==== MOBILE ==== */
         @media(max-width:768px) {
-
             nav {
                 display: none;
                 position: absolute;
@@ -141,24 +131,20 @@
             .article {
                 flex-direction: column;
             }
-
-            .article img {
-                width: 100%;
-            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="logo">Programmind</div>
+        <div class="logo" onclick="location.href = 'index.html'">Programmind</div>
 
         <nav class="nav-menu" id="nav">
             <a href="index.html">Home</a>
             <a href="index.html">Blog</a>
             <a href="https://whois65.github.io/portfolio/">About</a>
             <a href="https://whois65.github.io/portfolio/#contact">Contact</a>
-            <button class="toggle" onclick="toggleDark()"><i id="ToggleDarkicon" class="ti ti-moon"></i></button>
+            <button class="toggle" onclick="toggleDark()"><i id="toggleDarkIcon" class="ti ti-moon"></i></button>
         </nav>
 
         <div class="hamburger" onclick="document.getElementById('nav').classList.toggle('active')">
@@ -180,7 +166,7 @@
 
         <!-- ARTICLES -->
         <section id="articles" class="articles">
-            <h2>Latest Posts</h2>
+            
 
         </section>
     </main>
@@ -189,99 +175,19 @@
         <p>© 2026 <strong>Programmind</strong>. All rights reserved.</p>
     </footer>
     <script>
-
-        let contents = [
-            {
-                title: "Best learning technique",
-                date: "",
-                image: "article0.jpg",
-                tag: ["Tips", "Learn"],
-                url: "best-learning-technique.html",
-                description: "Learning is not about getting tired. Find the best learning methods."
-            },
-            {
-                title: "Not money, But these are important",
-                date: "",
-                image: "article1.jpg",
-                tag: ["Tips", "Life"],
-                url: "life.html",
-                description: "Small things we often ignore can have a huge impact on our lives."
-            },
-            {
-                title: "From zero to hero",
-                date: "",
-                image: "article2.jpg",
-                tag: ["Tips", "Learn"],
-                url: "roadmap.html",
-                description: "Learning is not about talent, but about the right method and consistency."
-            },
-            {
-                title: "Reading Tips",
-                date: "",
-                image: "reading.avif",
-                tag: ["Tips", "Learn"],
-                url: "read.html",
-                description: "Many people reading in the wrong way that is why they forgot the contents not long after."
-            },
-            {
-                title: "Financial Management",
-                date: "",
-                image: "finance.jpg",
-                tag: ["Tips", "Learn", "Finance"],
-                url: "quotes.html",
-                description: "Financial Management"
-            },
-            {
-                title: "Quotes",
-                date: "",
-                image: "quotes.avif",
-                tag: ["Tips", "Learn", "Quotes"],
-                url: "quotes.html",
-                description: "My quotes"
-            },
-            {
-                title: "Ruangsunyi",
-                date: "",
-                image: "poem.jpg",
-                tag: ["Poem", "Quotes"],
-                url: "ruangsunyi(puisi).html",
-                description: "Poem Website."
-            },
-            {
-                title: "Manyougana (万葉仮名)",
-                date: "",
-                image: "manyougana.png",
-                tag: ["History", "Japan"],
-                url: "manyougana.html",
-                description: "Manyōgana (万葉仮名) is an ancient Japanese writing system in which Chinese characters (kanji) were used to represent the sounds of the Japanese language. Instead of conveying meaning, these kanji were selected purely for their phonetic value."
-            },
-            {
-                title: "ProgramCard",
-                date: "",
-                image: "",
-                tag: ["Learn", "Application"],
-                url: "programcard.html",
-                description: "A flashcard application for remembering learning topics and subjects. Including math, language and other subjects."
-            },
-            {
-                title: "Markdown Editor",
-                date: "",
-                image: "",
-                tag: ["Tools", "Application"],
-                url: "https://whoi65.github.io/md-editor",
-                description: "A web application for you to ri"
-            }
-        ]
-
-        contents.forEach(content => {
-            const article = document.createElement("div");
-            let tags = ""
-            content.tag.forEach(tag => {
-                tags += `<div class="tag">${tag}</div>`
+        fetch("articles/articles.json").then(res => res.json()).then(contents => {
+            qi("articles").innerHTML += "<h2>Latest Posts</h2>";
+            contents.forEach(content => {
+                const article = document.createElement("div");
+                let tags = ""
+                content.tag.forEach(tag => {
+                    tags += `<div class="tag">${tag}</div>`
+                })
+                tags += content.date;
+                article.innerHTML = `<div class="article" style="cursor:pointer;"><img src="${content.image[0] === "h" ? content.image : "images/" + content.image}"><div class="container"><h3>${content.title}</h3><p>${content.description}</p><span class="tags">${tags}</span><button onclick="window.location.href = '${content.id[0] !== "h" ? "articles/index.html?id=" + content.id : content.id}'">Read More</button></div></div>`;
+                document.getElementById("articles").appendChild(article);
             })
-            article.innerHTML = `<div class="article" style="cursor:pointer;"><img src="images/${content.image}"><div class="container"><h3>${content.title}</h3><p>${content.description}</p><span class="tags">${tags}</span><button onclick="window.location.href = '${content.url[0] !== "h" ? "articles/"+content.url : content.url}'">Read More</button></div></div>`;
-            document.getElementById("articles").appendChild(article);
-        })
+        }).catch(err=> qi("articles").innerHTML += "<center><h2>Error: " + err +"</h2></center>")
     </script>
 
 </body>
