@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>万葉仮名 (Manyōgana)</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="../scripts/main.js"></script>
     <style>
         * {
             margin: 0;
@@ -51,35 +52,7 @@
             border-top: 1px solid #ddd;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        th {
-            background: #333;
-            color: white;
-            font-weight: normal;
-        }
-
-        td,
-        th {
-            text-align: center;
-            padding: 12px;
-        }
-
-        tr:nth-child(even) {
-            background: #f5f5f5;
-        }
-
-        tr:hover {
-            background: #eaeaea;
-        }
+        
 
         footer {
             margin-top: 60px;
@@ -326,19 +299,8 @@
 
     <footer>
         <p>© 2026 <strong>Programmind</strong>. All rights reserved.</p>
-        <p>Built with passion for language learning 🚀</p>
+        <p>Built with passion for language learning </p>
     </footer>
-    <script>
-        function toggleDark() {
-            document.body.classList.toggle("dark");
-            localStorage.setItem("darkMode",
-                document.body.classList.contains("dark"));
-        }
-
-        if (localStorage.getItem("darkMode") === "true") {
-            document.body.classList.add("dark");
-        }
-    </script>
 </body>
 
 </html>

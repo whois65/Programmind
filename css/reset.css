@@ -1,0 +1,221 @@
+/* ==== ROOT ==== */
+:root {
+    --bg: #f7f8fc;
+    --card: #ffffff;
+    --text: #1f2937;
+    --sub: #6b7280;
+    --accent: #6366f1;
+    --accent-hover: #4f46e5;
+    --accent-light: #a5b4fc;
+    --radius: 12px;
+    --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    --button: #2ecc71;
+    --button-hover: #25a25a;
+    --button2: #9b59b6;
+    --button2-hover: #884ea0;
+    --button3: #3a7afe;
+    --button3-hover: #2a5fd8;
+}
+
+/* ==== RESET ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+    transition: color .25s ease, background .25s ease, transform .25s ease;
+}
+
+body.dark {
+    --bg: #0f111a;
+    --card: #1a1d2b;
+    --bg-card: #1a1d2b;
+    --text: #e5e7eb;
+    --sub: #9ca3af;
+    --accent: #4f46e5;
+    --accent-hover: #6366f1;
+    --accent-light: #818cf8;
+    --radius: 12px;
+    --shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* ==== BASE ==== */
+body {
+    background: var(--bg);
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+
+/* ==== HEADER ==== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: var(--card);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--accent);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: var(--accent);
+}
+
+.card {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== HERO ===== */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--accent-hover), var(--accent));
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    opacity: 0.9;
+    max-width: 500px;
+    margin: auto;
+}
+
+.toggle {
+    background: var(--accent);
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    background: var(--accent-hover);
+    transform: scale(0.97);
+}
+
+/* ==== HAMBURGER ==== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    margin: 3px 0;
+}
+
+/* ====== table ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: var(--accent-light);
+    border-radius: .8rem;
+    backdrop-filter: blur(7px);
+    overflow: hidden;
+    overflow: auto;
+    box-shadow: 0 4px 10px #0005;
+}
+
+tbody {
+    overflow: auto;
+}
+
+th {
+    background: var(--accent);
+    color: var(--text);
+    font-weight: normal;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    background: var(--button3);
+}
+
+tr:hover {
+    background: var(--accent-hover);
+}
+
+footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+    text-align: center;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+.dark footer {
+    color: #f5f5f5;
+}
+
+/* ==== MOBILE ==== */
+@media(max-width:768px) {
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        flex-direction: column;
+        background: var(--card);
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .article {
+        flex-direction: column;
+    }
+
+    .article img {
+        width: 100%;
+    }
+}

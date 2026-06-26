@@ -5,29 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programmind</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
     <style>
-        
-
-        /* ==== HERO ==== */
-        .hero {
-            padding: 60px 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #4f46e5, #7c3aed);
-            color: white;
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            opacity: 0.9;
-            max-width: 500px;
-            margin: auto;
-        }
-
         /* ==== BUTTON ==== */
         .btn {
             margin-top: 15px;
@@ -35,7 +16,7 @@
             border-radius: 8px;
             border: none;
             color: var(--accent);
-            background: var(--bg);
+            background: #fff;
             cursor: pointer;
         }
 
@@ -164,22 +145,20 @@
             .article img {
                 width: 100%;
             }
-
         }
     </style>
 </head>
 
 <body>
-
     <header>
         <div class="logo">Programmind</div>
 
-        <nav id="nav">
+        <nav class="nav-menu" id="nav">
             <a href="index.html">Home</a>
             <a href="index.html">Blog</a>
             <a href="https://whois65.github.io/portfolio/">About</a>
             <a href="https://whois65.github.io/portfolio/#contact">Contact</a>
-            <button class="toggle" onclick="toggleDark()">🌙</button>
+            <button class="toggle" onclick="toggleDark()"><i id="ToggleDarkicon" class="ti ti-moon"></i></button>
         </nav>
 
         <div class="hamburger" onclick="document.getElementById('nav').classList.toggle('active')">
@@ -201,7 +180,7 @@
 
         <!-- ARTICLES -->
         <section id="articles" class="articles">
-            <h2>Top Posts</h2>
+            <h2>Latest Posts</h2>
 
         </section>
     </main>
@@ -214,6 +193,7 @@
         let contents = [
             {
                 title: "Best learning technique",
+                date: "",
                 image: "article0.jpg",
                 tag: ["Tips", "Learn"],
                 url: "best-learning-technique.html",
@@ -221,6 +201,7 @@
             },
             {
                 title: "Not money, But these are important",
+                date: "",
                 image: "article1.jpg",
                 tag: ["Tips", "Life"],
                 url: "life.html",
@@ -228,24 +209,67 @@
             },
             {
                 title: "From zero to hero",
+                date: "",
                 image: "article2.jpg",
                 tag: ["Tips", "Learn"],
                 url: "roadmap.html",
                 description: "Learning is not about talent, but about the right method and consistency."
             },
             {
+                title: "Reading Tips",
+                date: "",
+                image: "reading.avif",
+                tag: ["Tips", "Learn"],
+                url: "read.html",
+                description: "Many people reading in the wrong way that is why they forgot the contents not long after."
+            },
+            {
+                title: "Financial Management",
+                date: "",
+                image: "finance.jpg",
+                tag: ["Tips", "Learn", "Finance"],
+                url: "quotes.html",
+                description: "Financial Management"
+            },
+            {
                 title: "Quotes",
-                image: "",
+                date: "",
+                image: "quotes.avif",
                 tag: ["Tips", "Learn", "Quotes"],
                 url: "quotes.html",
                 description: "My quotes"
             },
             {
+                title: "Ruangsunyi",
+                date: "",
+                image: "poem.jpg",
+                tag: ["Poem", "Quotes"],
+                url: "ruangsunyi(puisi).html",
+                description: "Poem Website."
+            },
+            {
                 title: "Manyougana (万葉仮名)",
-                image: "",
+                date: "",
+                image: "manyougana.png",
                 tag: ["History", "Japan"],
                 url: "manyougana.html",
                 description: "Manyōgana (万葉仮名) is an ancient Japanese writing system in which Chinese characters (kanji) were used to represent the sounds of the Japanese language. Instead of conveying meaning, these kanji were selected purely for their phonetic value."
+            },
+            {
+                title: "ProgramCard",
+                date: "",
+                image: "",
+                tag: ["Learn", "Application"],
+                url: "programcard.html",
+                description: "A flashcard application for remembering learning topics and subjects. Including math, language and other subjects."
+            },
+            {
+                title: "Markdown Editor",
+                date: "",
+                image: "",
+                tag: ["Tools", "Application"],
+                url: "https://whoi65.github.io/md-editor",
+                description: "A web application for you to ri"
             }
         ]
 
@@ -255,22 +279,9 @@
             content.tag.forEach(tag => {
                 tags += `<div class="tag">${tag}</div>`
             })
-            article.innerHTML = `<div class="article" style="cursor:pointer;"><img src="${content.image}"><div class="container"><h3>${content.title}</h3><p>${content.description}</p><span class="tags">${tags}</span><button onclick="window.location.href = '${content.url}'">Read More</button></div></div>`;
+            article.innerHTML = `<div class="article" style="cursor:pointer;"><img src="images/${content.image}"><div class="container"><h3>${content.title}</h3><p>${content.description}</p><span class="tags">${tags}</span><button onclick="window.location.href = '${content.url[0] !== "h" ? "articles/"+content.url : content.url}'">Read More</button></div></div>`;
             document.getElementById("articles").appendChild(article);
         })
-
-
-
-        /* DARK MODE SAVE */
-        function toggleDark() {
-            document.body.classList.toggle("dark");
-            localStorage.setItem("darkMode",
-                document.body.classList.contains("dark"));
-        }
-
-        if (localStorage.getItem("darkMode") === "true") {
-            document.body.classList.add("dark");
-        }
     </script>
 
 </body>

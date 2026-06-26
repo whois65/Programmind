@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roadmap - Programmind</title>
-    <link rel="stylesheet" href="reset.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="../scripts/main.js"></script>
     <style>
         /* ===== RESET ===== */
         * {
@@ -96,80 +96,80 @@
             {
                 subject: "Biology",
                 tag: "Science",
-                url: "biology",
+                id: "biology",
                 description: "Explore living systems, from cells to ecosystems, and understand how life works."
             },
             {
                 subject: "Business",
                 tag: "Economics",
-                url: "business",
+                id: "business",
                 description: "Learn how to create value, build ventures, and turn ideas into income."
             },
             {
                 subject: "Chemistry",
                 tag: "Science",
-                url: "chemistry",
+                id: "chemistry",
                 description: "Study matter, its structure, and the reactions that shape the world."
             },
             {
                 subject: "Economics",
                 tag: "Economics",
-                url: "economics",
+                id: "economics",
                 description: "Understand how money, markets, and global economies work."
             },
             {
                 subject: "English",
                 tag: "Language",
-                url: "english",
+                id: "english",
                 description: "Improve communication, writing, and global understanding."
             },
             {
                 subject: "Indonesian",
                 tag: "Language",
-                url: "indonesian",
+                id: "indonesian",
                 description: "Master formal writing and effective communication in your native language."
             },
             {
                 subject: "Japanese",
                 tag: "Language",
-                url: "japanese",
+                id: "japanese",
                 description: "Master grammar, kanji, and real-world communication skills."
             },
             {
                 subject: "Mandarin",
                 tag: "Language",
-                url: "mandarin",
+                id: "mandarin",
                 description: "Learn tones, characters, and practical daily communication."
             },
             {
                 subject: "Mathematics",
-                url: "math",
+                id: "math",
                 description: "Build strong logical thinking and problem-solving skills."
             },
             {
                 subject: "Philosophy",
-                url: "philosophy",
+                id: "philosophy",
                 description: "Develop critical thinking, logic, and a deeper understanding of life and reality."
             },
             {
                 subject: "Physics",
                 tag: "Science",
-                url: "physics",
+                id: "physics",
                 description: "Understand the fundamental laws that govern the universe."
             },
             {
                 subject: "Programming",
-                url: "programming",
+                id: "programming",
                 description: "Build software, solve real-world problems, and create powerful projects."
             },
             {
                 subject: "Cybersecurity",
-                url: "cybersecurity",
+                id: "cybersecurity",
                 description: "Protect systems, understand threats, and secure digital environments."
             },
             {
                 subject: "UI/UX Design",
-                url: "uiux",
+                id: "uiux",
                 description: "Design intuitive, modern, and user-friendly digital experiences."
             }
         ];
@@ -177,7 +177,7 @@
             let a = document.createElement("a");
             if (roadmap.tag !== undefined)  a.innerHTML = `<div class="card"><div class="tag">${roadmap.tag}</div><h3>${roadmap.subject}</h3><p>${roadmap.description}</p></div>`;
             else  a.innerHTML = `<div class="card"><h3>${roadmap.subject}</h3><p>${roadmap.description}</p></div>`;
-            a.href = "roadmap/index.html?subject=" + roadmap.url
+            a.href = "roadmap/index.html?subject=" + roadmap.id;
             a.style = "text-decoration: none;color: inherit;"
             document.querySelector(".container").appendChild(a)
         });
