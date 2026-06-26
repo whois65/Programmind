@@ -1,0 +1,1861 @@
+{
+    "biology": {
+        "id": "biology",
+        "subject": "Biology",
+        "def": "Biology is the study of living organisms and their interactions with each other and the environment. It covers structures, functions, growth, evolution, and the processes that sustain life.",
+        "description": "This roadmap guides you from the fundamental building blocks of life to complex biological systems and real-world applications. You will begin with cell biology and basic biochemical concepts, which form the foundation of all living systems.\n\nAs you progress, you will explore genetics, evolution, and the diversity of life, followed by detailed studies of human body systems and their functions. You will also learn how organisms interact with their environment through ecology.\n\nAt advanced levels, you will study molecular biology, biotechnology, and modern biological applications, helping you connect theory with real-world issues such as health, environment, and technology.",
+        "roadmap": [
+            {
+                "title": "Foundations of Biology",
+                "topics": [
+                    "Characteristics of living things",
+                    "Levels of organization (cell → organism → ecosystem)",
+                    "Scientific method in biology",
+                    "Basic chemistry for biology",
+                    "Water and biomolecules (carbohydrates, proteins, lipids, nucleic acids)"
+                ]
+            },
+            {
+                "title": "Cell Biology",
+                "topics": [
+                    "Cell theory",
+                    "Prokaryotic vs eukaryotic cells",
+                    "Cell structure and organelles",
+                    "Cell membrane and transport (diffusion, osmosis, active transport)",
+                    "Microscopy basics"
+                ]
+            },
+            {
+                "title": "Cell Processes",
+                "topics": [
+                    "Cell cycle",
+                    "Mitosis and meiosis",
+                    "Cellular respiration",
+                    "Photosynthesis",
+                    "ATP and energy flow"
+                ]
+            },
+            {
+                "title": "Genetics",
+                "topics": [
+                    "DNA structure",
+                    "Genes and chromosomes",
+                    "Mendelian genetics",
+                    "Punnett squares",
+                    "Genetic variation and mutation",
+                    "Basic inheritance patterns"
+                ]
+            },
+            {
+                "title": "Evolution",
+                "topics": [
+                    "Natural selection",
+                    "Adaptation",
+                    "Evidence of evolution",
+                    "Speciation",
+                    "Evolutionary relationships"
+                ]
+            },
+            {
+                "title": "Diversity of Life",
+                "topics": [
+                    "Classification of organisms",
+                    "Domains and kingdoms",
+                    "Bacteria and archaea",
+                    "Protists and fungi",
+                    "Plants and animals"
+                ]
+            },
+            {
+                "title": "Plant Biology",
+                "topics": [
+                    "Plant structure",
+                    "Photosynthesis in plants",
+                    "Transport systems (xylem, phloem)",
+                    "Plant growth and hormones",
+                    "Reproduction in plants"
+                ]
+            },
+            {
+                "title": "Human Body Systems",
+                "topics": [
+                    "Digestive system",
+                    "Respiratory system",
+                    "Circulatory system",
+                    "Nervous system",
+                    "Excretory system",
+                    "Endocrine system",
+                    "Reproductive system",
+                    "Immune system"
+                ]
+            },
+            {
+                "title": "Ecology",
+                "topics": [
+                    "Ecosystems and biomes",
+                    "Food chains and food webs",
+                    "Energy flow and cycles (carbon, nitrogen)",
+                    "Population dynamics",
+                    "Human impact on environment"
+                ]
+            },
+            {
+                "title": "Molecular Biology",
+                "topics": [
+                    "DNA replication",
+                    "Transcription and translation",
+                    "Gene expression",
+                    "Protein synthesis",
+                    "Genetic engineering (intro)"
+                ]
+            },
+            {
+                "title": "Biotechnology",
+                "topics": [
+                    "PCR and DNA technology",
+                    "Cloning",
+                    "CRISPR (intro)",
+                    "Medical biotechnology",
+                    "Ethics in biotechnology"
+                ]
+            },
+            {
+                "title": "Advanced Topics & Applications",
+                "topics": [
+                    "Neuroscience basics",
+                    "Immunology",
+                    "Disease and pathogens",
+                    "Epidemiology",
+                    "Environmental biology",
+                    "Careers in biology"
+                ]
+            }
+        ]
+    },
+    "math": {
+        "subject": "Mathematics",
+        "id": "math",
+        "description": "This roadmap takes you from basic arithmetic to advanced mathematics including algebra, calculus, and beyond. You will build strong problem-solving and logical thinking skills essential for science and technology.",
+        "def": "Mathematics is the study of numbers, structures, patterns, and relationships. It provides the foundation for science, engineering, and technology, and develops logical reasoning and problem-solving skills.",
+        "roadmap": [
+            {
+                "title": "Arithmetic and Number Sense",
+                "topics": [
+                    "Integers, fractions, decimals",
+                    "Order of operations (PEMDAS)",
+                    "Factors, multiples, primes",
+                    "Ratio and proportion",
+                    "Percentages",
+                    "Basic number properties"
+                ]
+            },
+            {
+                "title": "Pre-Algebra",
+                "topics": [
+                    "Variables and expressions",
+                    "Basic equations",
+                    "Linear equations",
+                    "Word problems",
+                    "Intro to inequalities",
+                    "Absolute value"
+                ]
+            },
+            {
+                "title": "Algebra I",
+                "topics": [
+                    "Linear equations and graphs",
+                    "Systems of equations",
+                    "Inequalities",
+                    "Functions (concept and graph)",
+                    "Polynomials",
+                    "Factoring quadratic expressions",
+                    "Quadratic equations",
+                    "Exponents and radicals",
+                    "Rational expressions (intro)"
+                ]
+            },
+            {
+                "title": "Geometry",
+                "topics": [
+                    "Points, lines, angles",
+                    "Triangles (similarity & congruence)",
+                    "Circles",
+                    "Polygons",
+                    "Coordinate geometry",
+                    "Area and volume",
+                    "Transformations (translation, rotation, reflection)",
+                    "Basic geometric proofs"
+                ]
+            },
+            {
+                "title": "Algebra II",
+                "topics": [
+                    "Advanced polynomials",
+                    "Complex numbers",
+                    "Quadratic functions (deep dive)",
+                    "Logarithms",
+                    "Exponential functions",
+                    "Rational functions",
+                    "Sequences and series",
+                    "Matrices (intro)"
+                ]
+            },
+            {
+                "title": "Trigonometry",
+                "topics": [
+                    "Angles and radian measure",
+                    "Unit circle",
+                    "Trigonometric ratios",
+                    "Trigonometric identities",
+                    "Graphs of trigonometric functions",
+                    "Inverse trigonometric functions",
+                    "Trigonometric equations",
+                    "Law of sines and cosines"
+                ]
+            },
+            {
+                "title": "Pre-Calculus",
+                "topics": [
+                    "Functions and transformations",
+                    "Polynomial and rational functions",
+                    "Exponential and logarithmic functions",
+                    "Trigonometry review",
+                    "Vectors basics",
+                    "Complex numbers (polar form)",
+                    "Intro to limits"
+                ]
+            },
+            {
+                "title": "Calculus I (Differential Calculus)",
+                "topics": [
+                    "Limits and continuity",
+                    "Derivatives",
+                    "Derivative rules",
+                    "Applications of derivatives (tangent, optimization, rates of change, graph sketching)",
+                    "Implicit differentiation",
+                    "L'Hôpital's rule"
+                ]
+            },
+            {
+                "title": "Calculus II (Integral Calculus)",
+                "topics": [
+                    "Definite and indefinite integrals",
+                    "Fundamental theorem of calculus",
+                    "Substitution",
+                    "Integration by parts",
+                    "Trigonometric integrals",
+                    "Partial fractions",
+                    "Applications of integrals (area, volume)",
+                    "Sequences and series",
+                    "Parametric equations",
+                    "Polar coordinates"
+                ]
+            },
+            {
+                "title": "Linear Algebra",
+                "topics": [
+                    "Vectors (2D and 3D)",
+                    "Matrices",
+                    "Determinants",
+                    "Systems of linear equations",
+                    "Vector spaces (intro)",
+                    "Eigenvalues and eigenvectors"
+                ]
+            },
+            {
+                "title": "Discrete Mathematics",
+                "topics": [
+                    "Logic and propositions",
+                    "Set theory",
+                    "Functions (discrete)",
+                    "Combinatorics",
+                    "Graph theory",
+                    "Recursion",
+                    "Algorithms basics"
+                ]
+            },
+            {
+                "title": "Probability and Statistics",
+                "topics": [
+                    "Basic probability",
+                    "Permutations and combinations",
+                    "Random variables",
+                    "Probability distributions",
+                    "Mean, variance, standard deviation",
+                    "Normal distribution",
+                    "Sampling and data",
+                    "Basic statistical inference"
+                ]
+            }
+        ]
+    },
+    "mandarin": {
+        "id": "mandarin",
+        "subject": "Mandarin Chinese",
+        "def": "Mandarin Chinese is the most widely spoken language in the world, known for its tonal pronunciation system and character-based writing. It is essential for communication, culture, and global opportunities, especially in business, technology, and international relations.",
+        "description": "This roadmap guides you from the fundamentals of Mandarin pronunciation and basic communication to advanced fluency and cultural understanding. You will start with Pinyin and tones, which are essential for accurate pronunciation, then build core grammar and vocabulary for daily communication.\n\nAs you progress, you will develop listening and speaking skills alongside reading and writing Chinese characters. Intermediate grammar structures and sentence patterns will allow you to express more complex ideas naturally.\n\nAt advanced levels, you will expand your vocabulary, learn idiomatic expressions (成语), and improve your ability to read, write, and communicate fluently in real-world contexts. The final stage focuses on immersion, cultural understanding, and preparation for proficiency exams such as HSK.",
+        "roadmap": [
+            {
+                "title": "Foundations (Pronunciation & Basics)",
+                "topics": [
+                    "Pinyin system (initials and finals)",
+                    "Four tones and neutral tone",
+                    "Tone changes (e.g., third tone sandhi)",
+                    "Basic greetings and self-introduction",
+                    "Numbers, dates, and time",
+                    "Basic sentence structure (SVO)"
+                ]
+            },
+            {
+                "title": "Core Grammar (Beginner)",
+                "topics": [
+                    "Basic word order (Subject + Time + Place + Verb + Object)",
+                    "Question particles (吗, 呢, 吧)",
+                    "Negation (不 vs 没)",
+                    "Measure words (个, 本, 张, etc.)",
+                    "Using 有 (to have) and 是 (to be)",
+                    "Basic question words (谁, 什么, 哪里, 为什么)"
+                ]
+            },
+            {
+                "title": "Essential Vocabulary Building",
+                "topics": [
+                    "Daily life vocabulary (food, school, family)",
+                    "Common verbs (吃, 去, 做, 看, 学)",
+                    "Adjectives and basic descriptions",
+                    "Pronouns and demonstratives (这, 那)",
+                    "Frequency expressions (常常, 有时候)",
+                    "Basic connectors (和, 但是, 因为, 所以)"
+                ]
+            },
+            {
+                "title": "Listening & Speaking Skills",
+                "topics": [
+                    "Shadowing simple dialogues",
+                    "Listening to slow Mandarin audio",
+                    "Practicing tones with minimal pairs",
+                    "Basic conversation practice",
+                    "Imitating native pronunciation",
+                    "Using apps or voice recording for feedback"
+                ]
+            },
+            {
+                "title": "Reading & Writing (Characters)",
+                "topics": [
+                    "Stroke order rules",
+                    "Radicals (部首) and meanings",
+                    "High-frequency characters (top 500–1000)",
+                    "Recognizing vs writing characters",
+                    "Reading simple sentences",
+                    "Using spaced repetition (SRS)"
+                ]
+            },
+            {
+                "title": "Intermediate Grammar",
+                "topics": [
+                    "Aspect particles (了, 过, 着)",
+                    "Result complements (看懂, 听到)",
+                    "Comparisons (比, 更)",
+                    "Serial verb constructions",
+                    "把 sentence structure",
+                    "被 passive structure"
+                ]
+            },
+            {
+                "title": "Conversation & Fluency",
+                "topics": [
+                    "Expressing opinions and feelings",
+                    "Talking about past experiences",
+                    "Asking follow-up questions",
+                    "Using filler words naturally",
+                    "Discussing daily topics",
+                    "Real-life conversation practice"
+                ]
+            },
+            {
+                "title": "Advanced Vocabulary & Idioms",
+                "topics": [
+                    "Chengyu (成语)",
+                    "Formal vs informal language",
+                    "Topic-specific vocabulary (technology, science, etc.)",
+                    "Synonyms and nuance differences",
+                    "Slang and modern expressions",
+                    "Collocations and natural phrasing"
+                ]
+            },
+            {
+                "title": "Advanced Reading & Writing",
+                "topics": [
+                    "Reading short stories and articles",
+                    "Understanding context and inference",
+                    "Writing essays and journals",
+                    "Using complex sentence structures",
+                    "Summarizing texts",
+                    "Argumentative writing"
+                ]
+            },
+            {
+                "title": "Immersion & Mastery",
+                "topics": [
+                    "Watching Chinese media without subtitles",
+                    "Reading novels or web novels",
+                    "Thinking in Mandarin",
+                    "Speaking with native speakers regularly",
+                    "Learning cultural context",
+                    "Preparing for HSK exams (HSK 4–6)"
+                ]
+            }
+        ]
+    },
+    "japanese": {
+        "id": "japanese",
+        "subject": "Japanese",
+        "def": "Japanese is an East Asian language known for its unique writing systems (Hiragana, Katakana, and Kanji) and context-based grammar. It is widely used in technology, entertainment, and culture, and is essential for communication and study in Japan.",
+        "description": "This roadmap guides you from the fundamentals of Japanese writing systems and basic grammar to advanced fluency and real-world communication. You will begin by mastering Hiragana and Katakana, which are essential for reading and pronunciation, along with basic sentence structures used in everyday conversation.\n\nAs you progress, you will build core grammar and vocabulary aligned with JLPT levels, while gradually learning Kanji and improving reading comprehension. Listening and speaking skills are developed alongside structured grammar to help you communicate naturally.\n\nAt intermediate and advanced stages, you will learn more complex grammar patterns, nuanced expressions, and formal vs casual speech. The final stage focuses on immersion, including consuming native content, thinking in Japanese, and preparing for higher-level JLPT exams (N2–N1).",
+        "roadmap": [
+            {
+                "title": "Foundations (Writing Systems & Basics)",
+                "topics": [
+                    "Hiragana (reading and writing)",
+                    "Katakana (reading and writing)",
+                    "Basic pronunciation",
+                    "Basic greetings and self-introduction",
+                    "Basic sentence structure (SOV)",
+                    "Particles: は, が, を, に, で"
+                ]
+            },
+            {
+                "title": "Core Grammar (Beginner - JLPT N5)",
+                "topics": [
+                    "Basic verb forms (ます, dictionary form)",
+                    "Present and past tense",
+                    "Negative forms",
+                    "Adjectives (い-adjective, な-adjective)",
+                    "Existence (ある / いる)",
+                    "Basic question forms (か, 何, 誰, どこ)"
+                ]
+            },
+            {
+                "title": "Essential Vocabulary Building",
+                "topics": [
+                    "Daily life vocabulary (school, family, food)",
+                    "Common verbs (行く, 来る, 食べる, 見る, する)",
+                    "Basic adjectives",
+                    "Pronouns (私, あなた, 彼, 彼女)",
+                    "Numbers, dates, time",
+                    "Counters (人, 本, 枚, etc.)"
+                ]
+            },
+            {
+                "title": "Listening & Speaking Skills",
+                "topics": [
+                    "Shadowing simple dialogues",
+                    "Listening to slow Japanese audio",
+                    "Basic conversation practice",
+                    "Pronunciation and intonation",
+                    "Imitating native speakers",
+                    "Using voice recording for feedback"
+                ]
+            },
+            {
+                "title": "Reading & Writing (Kanji)",
+                "topics": [
+                    "Basic Kanji (JLPT N5–N4)",
+                    "Stroke order and radicals",
+                    "Onyomi vs Kunyomi",
+                    "Recognizing vs writing Kanji",
+                    "Reading simple sentences",
+                    "Using spaced repetition (SRS)"
+                ]
+            },
+            {
+                "title": "Intermediate Grammar (JLPT N4–N3)",
+                "topics": [
+                    "Te-form and its uses",
+                    "Potential form",
+                    "Volitional form",
+                    "Conditional forms (たら, ば)",
+                    "Giving and receiving (あげる, くれる, もらう)",
+                    "Basic honorific and humble expressions"
+                ]
+            },
+            {
+                "title": "Conversation & Fluency",
+                "topics": [
+                    "Expressing opinions and feelings",
+                    "Talking about past experiences",
+                    "Casual vs polite speech",
+                    "Asking follow-up questions",
+                    "Daily conversation practice",
+                    "Thinking in Japanese"
+                ]
+            },
+            {
+                "title": "Advanced Grammar (JLPT N2–N1)",
+                "topics": [
+                    "Advanced grammar patterns",
+                    "Nuance and subtle differences",
+                    "Formal vs informal expressions",
+                    "Written vs spoken language",
+                    "Complex sentence structures",
+                    "Advanced connectors and expressions"
+                ]
+            },
+            {
+                "title": "Advanced Vocabulary & Expressions",
+                "topics": [
+                    "Advanced Kanji (JLPT N2–N1)",
+                    "Idiomatic expressions",
+                    "Business Japanese (敬語)",
+                    "Synonyms and nuance differences",
+                    "Collocations and natural phrasing",
+                    "Specialized vocabulary (tech, science, etc.)"
+                ]
+            },
+            {
+                "title": "Immersion & Mastery",
+                "topics": [
+                    "Watching anime, dramas, or news without subtitles",
+                    "Reading novels, manga, or articles",
+                    "Speaking with native speakers regularly",
+                    "Writing essays and journals",
+                    "Understanding cultural context",
+                    "Preparing for JLPT exams (N5–N1)"
+                ]
+            }
+        ]
+    },
+    "indonesian": {
+        "id": "indonesian",
+        "subject": "Indonesian (Bahasa Indonesia)",
+        "def": "Bahasa Indonesia is the official language of Indonesia, used for communication, education, and formal contexts. It is known for its relatively simple grammar structure, but rich vocabulary, formal standards, and cultural nuances.",
+        "description": "This roadmap guides you from basic communication in Bahasa Indonesia to advanced fluency and formal language mastery. You will begin with basic sentence structure, vocabulary, and everyday communication skills.\n\nAs you progress, you will learn proper grammar, word formation, and sentence patterns used in both spoken and written Indonesian. You will also develop reading and writing skills for formal and academic contexts.\n\nAt advanced levels, you will focus on effective communication, structured writing, and understanding nuances in formal, informal, and regional usage. The final stage emphasizes mastery through reading, writing, and real-world communication.",
+        "roadmap": [
+            {
+                "title": "Foundations (Basic Communication)",
+                "topics": [
+                    "Alphabet and pronunciation",
+                    "Basic greetings and introductions",
+                    "Simple sentence structure (S-P-O-K)",
+                    "Numbers, dates, and time",
+                    "Basic daily vocabulary",
+                    "Common expressions"
+                ]
+            },
+            {
+                "title": "Core Grammar (Beginner)",
+                "topics": [
+                    "Word order (S-P-O-K)",
+                    "Types of sentences (statement, question, command)",
+                    "Basic affixes (me-, di-, ber-, ter-)",
+                    "Pronouns (saya, kamu, dia, mereka)",
+                    "Negation (tidak, bukan)",
+                    "Basic conjunctions (dan, atau, tetapi)"
+                ]
+            },
+            {
+                "title": "Vocabulary Development",
+                "topics": [
+                    "Daily life vocabulary (school, family, environment)",
+                    "Verbs and action words",
+                    "Adjectives and descriptions",
+                    "Synonyms and antonyms",
+                    "Formal vs informal vocabulary",
+                    "Loanwords and modern terms"
+                ]
+            },
+            {
+                "title": "Reading Skills",
+                "topics": [
+                    "Understanding short texts",
+                    "Identifying main ideas",
+                    "Context clues and inference",
+                    "Reading comprehension strategies",
+                    "Analyzing simple articles",
+                    "Summarizing texts"
+                ]
+            },
+            {
+                "title": "Writing Skills",
+                "topics": [
+                    "Basic sentence writing",
+                    "Paragraph structure",
+                    "Descriptive writing",
+                    "Narrative writing",
+                    "Using punctuation correctly",
+                    "Spelling (EYD / PUEBI)"
+                ]
+            },
+            {
+                "title": "Intermediate Grammar",
+                "topics": [
+                    "Advanced affixes (per-, ke-, -kan, -i)",
+                    "Passive voice (di-)",
+                    "Active vs passive sentences",
+                    "Complex sentences",
+                    "Conjunctions (karena, sehingga, walaupun)",
+                    "Direct and indirect speech"
+                ]
+            },
+            {
+                "title": "Speaking & Communication",
+                "topics": [
+                    "Expressing opinions and arguments",
+                    "Formal vs informal speech",
+                    "Public speaking basics",
+                    "Discussion and debate",
+                    "Storytelling",
+                    "Effective communication skills"
+                ]
+            },
+            {
+                "title": "Advanced Reading & Writing",
+                "topics": [
+                    "Analyzing complex texts",
+                    "Academic reading",
+                    "Essay writing",
+                    "Argumentative writing",
+                    "Critical thinking in texts",
+                    "Editing and revising writing"
+                ]
+            },
+            {
+                "title": "Literature and Culture",
+                "topics": [
+                    "Poetry (puisi)",
+                    "Short stories (cerpen)",
+                    "Novels and drama",
+                    "Figurative language (majas)",
+                    "Cultural context in language",
+                    "Literary analysis"
+                ]
+            },
+            {
+                "title": "Mastery & Academic Skills",
+                "topics": [
+                    "Formal writing (reports, papers)",
+                    "Scientific writing basics",
+                    "Advanced vocabulary usage",
+                    "Language precision and clarity",
+                    "Presentation skills",
+                    "Preparing for exams or competitions"
+                ]
+            }
+        ]
+    },
+    "philosophy": {
+        "id": "philosophy",
+        "subject": "Philosophy",
+        "def": "Philosophy is the study of fundamental questions about existence, knowledge, truth, morality, and reasoning. It develops critical thinking, logical analysis, and the ability to understand complex ideas and perspectives.",
+        "description": "This roadmap guides you from basic philosophical thinking to advanced reasoning and deep understanding of fundamental questions about life, knowledge, and reality. You will begin by learning how to think clearly, analyze arguments, and question assumptions.\n\nAs you progress, you will explore key branches of philosophy such as logic, ethics, metaphysics, and epistemology. You will also study major philosophical ideas and thinkers that have shaped human thought.\n\nAt advanced levels, you will develop your own reasoning, evaluate complex arguments, and apply philosophical thinking to real-world problems, helping you make better decisions and understand the world more deeply.",
+        "roadmap": [
+            {
+                "title": "Foundations of Thinking",
+                "topics": [
+                    "What is philosophy",
+                    "Asking good questions",
+                    "Critical thinking basics",
+                    "Assumptions and beliefs",
+                    "Arguments and reasoning",
+                    "Introduction to logic"
+                ]
+            },
+            {
+                "title": "Logic and Reasoning",
+                "topics": [
+                    "Deductive vs inductive reasoning",
+                    "Logical structure (premise → conclusion)",
+                    "Common logical fallacies",
+                    "Validity vs soundness",
+                    "Syllogisms",
+                    "Basic symbolic logic (intro)"
+                ]
+            },
+            {
+                "title": "Epistemology (Knowledge)",
+                "topics": [
+                    "What is knowledge",
+                    "Belief vs truth",
+                    "Sources of knowledge (experience, reason)",
+                    "Skepticism",
+                    "Limits of knowledge",
+                    "Justification and evidence"
+                ]
+            },
+            {
+                "title": "Metaphysics (Reality)",
+                "topics": [
+                    "What is reality",
+                    "Mind vs body problem",
+                    "Free will vs determinism",
+                    "Time and existence",
+                    "Identity and self",
+                    "Nature of consciousness"
+                ]
+            },
+            {
+                "title": "Ethics (Morality)",
+                "topics": [
+                    "What is right and wrong",
+                    "Utilitarianism",
+                    "Deontology",
+                    "Virtue ethics",
+                    "Moral dilemmas",
+                    "Ethics in real life"
+                ]
+            },
+            {
+                "title": "Political Philosophy",
+                "topics": [
+                    "What is justice",
+                    "Rights and freedom",
+                    "Authority and power",
+                    "Forms of government",
+                    "Equality vs liberty",
+                    "Social contract theory"
+                ]
+            },
+            {
+                "title": "Philosophy of Mind",
+                "topics": [
+                    "What is consciousness",
+                    "Mind vs brain",
+                    "Artificial intelligence and mind",
+                    "Personal identity",
+                    "Thought and perception"
+                ]
+            },
+            {
+                "title": "Philosophy of Science",
+                "topics": [
+                    "What is science",
+                    "Scientific method and truth",
+                    "Theory vs hypothesis",
+                    "Limits of science",
+                    "Science vs pseudoscience",
+                    "Paradigm shifts"
+                ]
+            },
+            {
+                "title": "Major Philosophers and Ideas",
+                "topics": [
+                    "Socrates and questioning",
+                    "Plato and ideal forms",
+                    "Aristotle and logic",
+                    "Descartes (rationalism)",
+                    "Hume (empiricism)",
+                    "Kant (synthesis)",
+                    "Nietzsche and existentialism"
+                ]
+            },
+            {
+                "title": "Advanced Thinking and Argumentation",
+                "topics": [
+                    "Analyzing complex arguments",
+                    "Constructing strong arguments",
+                    "Debate and discussion skills",
+                    "Recognizing bias",
+                    "Multi-perspective thinking",
+                    "Philosophical writing"
+                ]
+            },
+            {
+                "title": "Applied Philosophy",
+                "topics": [
+                    "Ethics in technology (AI, data)",
+                    "Philosophy in business decisions",
+                    "Decision making frameworks",
+                    "Personal values and purpose",
+                    "Philosophy in daily life",
+                    "Meaning of life exploration"
+                ]
+            },
+            {
+                "title": "Mastery and Independent Thinking",
+                "topics": [
+                    "Developing your own philosophy",
+                    "Questioning assumptions deeply",
+                    "Thinking independently",
+                    "Continuous reflection",
+                    "Reading philosophical texts",
+                    "Lifelong learning mindset"
+                ]
+            }
+        ]
+    },
+    "physics": {
+        "subject": "Physics",
+        "id": "physics",
+        "def": "Physics is the study of matter, energy, and the fundamental forces of nature. It explores how objects move, interact, and behave across space and time, forming the foundation of many technologies and scientific fields.",
+        "roadmap": [
+            {
+                "title": "Mathematical Foundations for Physics",
+                "topics": [
+                    "Basic algebra and equations",
+                    "Trigonometry (sin, cos, tan)",
+                    "Vectors (magnitude and direction)",
+                    "Graph interpretation",
+                    "Scientific notation"
+                ]
+            },
+            {
+                "title": "Kinematics (Motion)",
+                "topics": [
+                    "Distance and displacement",
+                    "Speed and velocity",
+                    "Acceleration",
+                    "Equations of motion",
+                    "Free fall motion",
+                    "Graph of motion (x-t, v-t)"
+                ]
+            },
+            {
+                "title": "Dynamics (Forces)",
+                "topics": [
+                    "Newton's laws of motion",
+                    "Types of forces (gravity, friction, tension, normal)",
+                    "Free body diagram",
+                    "Net force and equilibrium",
+                    "Applications of F = ma"
+                ]
+            },
+            {
+                "title": "Work, Energy, and Power",
+                "topics": [
+                    "Work and energy",
+                    "Kinetic energy",
+                    "Potential energy",
+                    "Conservation of energy",
+                    "Power"
+                ]
+            },
+            {
+                "title": "Momentum and Collisions",
+                "topics": [
+                    "Momentum",
+                    "Impulse",
+                    "Conservation of momentum",
+                    "Elastic and inelastic collisions"
+                ]
+            },
+            {
+                "title": "Circular Motion and Gravitation",
+                "topics": [
+                    "Uniform circular motion",
+                    "Centripetal force",
+                    "Gravitational force",
+                    "Newton's law of gravitation",
+                    "Orbits and satellites"
+                ]
+            },
+            {
+                "title": "Waves and Oscillations",
+                "topics": [
+                    "Wave properties (wavelength, frequency, speed)",
+                    "Types of waves (transverse, longitudinal)",
+                    "Wave behavior (reflection, refraction, diffraction)",
+                    "Sound waves",
+                    "Simple harmonic motion"
+                ]
+            },
+            {
+                "title": "Thermodynamics",
+                "topics": [
+                    "Temperature and heat",
+                    "Heat transfer (conduction, convection, radiation)",
+                    "Laws of thermodynamics",
+                    "Internal energy",
+                    "Efficiency of engines"
+                ]
+            },
+            {
+                "title": "Electricity and Magnetism",
+                "topics": [
+                    "Electric charge and Coulomb's law",
+                    "Electric field and potential",
+                    "Current, voltage, resistance",
+                    "Ohm's law",
+                    "Series and parallel circuits",
+                    "Magnetic fields",
+                    "Electromagnetic induction"
+                ]
+            },
+            {
+                "title": "Modern Physics",
+                "topics": [
+                    "Atomic models",
+                    "Quantum theory basics",
+                    "Photoelectric effect",
+                    "Relativity (basic concept)",
+                    "Nuclear physics",
+                    "Radioactivity"
+                ]
+            }
+        ]
+    },
+    "english": {
+        "id": "english",
+        "subject": "English",
+        "def": "English is a global language used for communication, education, business, and technology. It is essential for accessing international knowledge and opportunities.",
+        "description": "This roadmap guides you from basic English communication to advanced fluency and academic proficiency. You will begin with foundational grammar, vocabulary, and pronunciation, which are essential for everyday communication.\n\nAs you progress, you will develop listening, speaking, reading, and writing skills through structured practice and real-world usage. You will also learn how to express ideas clearly and understand different contexts.\n\nAt advanced levels, you will focus on academic writing, critical reading, and professional communication. The final stage emphasizes fluency, confidence, and preparation for international exams such as TOEFL or IELTS.",
+        "roadmap": [
+            {
+                "title": "Foundations (Basic English)",
+                "topics": [
+                    "Alphabet and pronunciation",
+                    "Basic vocabulary (daily life)",
+                    "Simple sentences (S + V + O)",
+                    "Basic grammar (to be, present simple)",
+                    "Numbers, dates, and time",
+                    "Basic greetings and introductions"
+                ]
+            },
+            {
+                "title": "Core Grammar (Beginner)",
+                "topics": [
+                    "Tenses (present, past, future)",
+                    "Subject-verb agreement",
+                    "Articles (a, an, the)",
+                    "Prepositions (in, on, at)",
+                    "Pronouns",
+                    "Basic conjunctions (and, but, because)"
+                ]
+            },
+            {
+                "title": "Vocabulary Building",
+                "topics": [
+                    "Daily vocabulary (school, work, lifestyle)",
+                    "Common verbs and phrasal verbs",
+                    "Adjectives and adverbs",
+                    "Synonyms and antonyms",
+                    "Collocations",
+                    "Word families"
+                ]
+            },
+            {
+                "title": "Listening Skills",
+                "topics": [
+                    "Listening to slow English audio",
+                    "Understanding keywords",
+                    "Listening for main ideas",
+                    "Shadowing practice",
+                    "Different accents (intro)",
+                    "Note-taking while listening"
+                ]
+            },
+            {
+                "title": "Speaking Skills",
+                "topics": [
+                    "Basic conversation",
+                    "Pronunciation and intonation",
+                    "Expressing opinions",
+                    "Asking and answering questions",
+                    "Fluency practice",
+                    "Speaking confidently"
+                ]
+            },
+            {
+                "title": "Reading Skills",
+                "topics": [
+                    "Reading simple texts",
+                    "Skimming and scanning",
+                    "Understanding context",
+                    "Identifying main ideas",
+                    "Reading articles and short stories",
+                    "Vocabulary from context"
+                ]
+            },
+            {
+                "title": "Writing Skills",
+                "topics": [
+                    "Sentence writing",
+                    "Paragraph structure",
+                    "Descriptive writing",
+                    "Narrative writing",
+                    "Basic essay structure",
+                    "Grammar and punctuation"
+                ]
+            },
+            {
+                "title": "Intermediate English",
+                "topics": [
+                    "Complex sentences",
+                    "Passive voice",
+                    "Conditionals (if clauses)",
+                    "Reported speech",
+                    "Advanced vocabulary",
+                    "Idioms and expressions"
+                ]
+            },
+            {
+                "title": "Advanced English",
+                "topics": [
+                    "Academic vocabulary",
+                    "Formal vs informal language",
+                    "Critical reading",
+                    "Argumentative writing",
+                    "Advanced grammar structures",
+                    "Nuance and tone"
+                ]
+            },
+            {
+                "title": "Academic & Test Preparation",
+                "topics": [
+                    "TOEFL/IELTS structure",
+                    "Reading strategies for exams",
+                    "Listening strategies",
+                    "Speaking test practice",
+                    "Writing essays (Task 1 & 2)",
+                    "Time management"
+                ]
+            },
+            {
+                "title": "Real-World Communication",
+                "topics": [
+                    "Business English",
+                    "Presentations",
+                    "Email writing",
+                    "Debates and discussions",
+                    "Public speaking",
+                    "Cross-cultural communication"
+                ]
+            },
+            {
+                "title": "Fluency & Mastery",
+                "topics": [
+                    "Thinking in English",
+                    "Watching content without subtitles",
+                    "Reading books and articles",
+                    "Writing regularly (journals, essays)",
+                    "Speaking with native speakers",
+                    "Continuous improvement"
+                ]
+            }
+        ]
+    },
+    "economics": {
+        "subject": "Economics",
+        "id": "economics",
+        "def": "Economics is the study of how individuals, businesses, and governments allocate limited resources to satisfy unlimited wants, focusing on production, distribution, and consumption. It is divided into microeconomics (individual and firm behavior) and macroeconomics (aggregate, national, or global economic systems).",
+        "roadmap": [
+            {
+                "title": "Basic Economic Concepts",
+                "topics": [
+                    "Scarcity and choice",
+                    "Opportunity cost",
+                    "Trade-offs and decision making",
+                    "Factors of production (land, labor, capital, entrepreneurship)",
+                    "Economic systems (traditional, command, market, mixed)"
+                ]
+            },
+            {
+                "title": "Supply and Demand",
+                "topics": [
+                    "Law of demand",
+                    "Law of supply",
+                    "Demand curve and supply curve",
+                    "Market equilibrium",
+                    "Shifts vs movements (demand & supply)",
+                    "Price elasticity of demand and supply"
+                ]
+            },
+            {
+                "title": "Consumer and Producer Behavior",
+                "topics": [
+                    "Utility and satisfaction",
+                    "Diminishing marginal utility",
+                    "Budget constraint",
+                    "Producer costs (fixed, variable, total)",
+                    "Revenue and profit",
+                    "Production function"
+                ]
+            },
+            {
+                "title": "Market Structures",
+                "topics": [
+                    "Perfect competition",
+                    "Monopoly",
+                    "Oligopoly",
+                    "Monopolistic competition",
+                    "Barriers to entry",
+                    "Price discrimination"
+                ]
+            },
+            {
+                "title": "Government and the Economy",
+                "topics": [
+                    "Taxes and subsidies",
+                    "Price controls (floor and ceiling)",
+                    "Public goods and externalities",
+                    "Market failure",
+                    "Government intervention"
+                ]
+            },
+            {
+                "title": "Macroeconomics Fundamentals",
+                "topics": [
+                    "Gross Domestic Product (GDP)",
+                    "Economic growth",
+                    "Business cycle",
+                    "Inflation",
+                    "Unemployment"
+                ]
+            },
+            {
+                "title": "Fiscal and Monetary Policy",
+                "topics": [
+                    "Government spending and taxation",
+                    "Budget deficit and surplus",
+                    "Central bank and money supply",
+                    "Interest rates",
+                    "Monetary policy tools"
+                ]
+            },
+            {
+                "title": "International Economics",
+                "topics": [
+                    "Comparative advantage",
+                    "Trade and globalization",
+                    "Exchange rates",
+                    "Balance of payments",
+                    "Trade policies (tariffs, quotas)"
+                ]
+            },
+            {
+                "title": "Financial and Development Economics",
+                "topics": [
+                    "Banking system",
+                    "Stock market basics",
+                    "Investment and risk",
+                    "Economic development",
+                    "Income inequality",
+                    "Poverty and sustainability"
+                ]
+            }
+        ]
+    },
+    "cybersecurity": {
+        "id": "cybersecurity",
+        "subject": "Cybersecurity",
+        "def": "Cybersecurity is the practice of protecting systems, networks, and data from digital attacks, unauthorized access, and damage. It involves identifying vulnerabilities, defending against threats, and ensuring the confidentiality, integrity, and availability of information.",
+        "description": "This roadmap guides you from the fundamentals of cybersecurity to advanced security practices and real-world applications. You will begin by understanding how computers, networks, and the internet work, which forms the foundation for all cybersecurity concepts.\n\nAs you progress, you will learn about common threats, vulnerabilities, and attack techniques, as well as how to defend against them using security tools and best practices. You will also gain hands-on experience with operating systems like Linux and essential networking concepts.\n\nAt intermediate levels, you will explore ethical hacking, penetration testing, and system security. Finally, you can specialize in areas such as network security, web security, digital forensics, or security engineering, while continuing to develop practical skills and real-world experience.",
+        "roadmap": [
+            {
+                "title": "Computer and Networking Fundamentals",
+                "topics": [
+                    "How computers work (CPU, memory, storage)",
+                    "Operating systems basics (Windows, Linux)",
+                    "Command line basics",
+                    "Networking basics (IP, DNS, HTTP, TCP/UDP)",
+                    "How the internet works",
+                    "Virtual machines (VMs)"
+                ]
+            },
+            {
+                "title": "Security Fundamentals",
+                "topics": [
+                    "CIA triad (confidentiality, integrity, availability)",
+                    "Authentication and authorization",
+                    "Encryption basics",
+                    "Hashing and salting",
+                    "Common vulnerabilities (OWASP Top 10)",
+                    "Threats (malware, phishing, social engineering)"
+                ]
+            },
+            {
+                "title": "Linux and System Skills",
+                "topics": [
+                    "Linux file system",
+                    "File permissions",
+                    "Process management",
+                    "Networking commands (ping, netstat, curl)",
+                    "Shell basics",
+                    "Package management"
+                ]
+            },
+            {
+                "title": "Networking Deep Dive",
+                "topics": [
+                    "OSI model",
+                    "TCP/IP model",
+                    "Ports and protocols",
+                    "Firewalls and routers",
+                    "Packet analysis",
+                    "DNS and HTTP deep dive"
+                ]
+            },
+            {
+                "title": "Web Security Basics",
+                "topics": [
+                    "How web applications work",
+                    "HTTP requests and responses",
+                    "Cookies and sessions",
+                    "Common attacks (XSS, SQL injection, CSRF)",
+                    "Input validation",
+                    "Secure coding basics"
+                ]
+            },
+            {
+                "title": "Ethical Hacking and Penetration Testing",
+                "topics": [
+                    "Reconnaissance (information gathering)",
+                    "Scanning and enumeration",
+                    "Vulnerability assessment",
+                    "Exploitation basics",
+                    "Post-exploitation",
+                    "Reporting findings"
+                ]
+            },
+            {
+                "title": "Security Tools",
+                "topics": [
+                    "Using Wireshark",
+                    "Using Nmap",
+                    "Using Burp Suite",
+                    "Password cracking tools",
+                    "Vulnerability scanners",
+                    "Basic scripting (Python/Bash)"
+                ]
+            },
+            {
+                "title": "System and Network Defense",
+                "topics": [
+                    "Firewalls and IDS/IPS",
+                    "System hardening",
+                    "Monitoring and logging",
+                    "Incident response",
+                    "Backup and recovery",
+                    "Security policies"
+                ]
+            },
+            {
+                "title": "Cryptography",
+                "topics": [
+                    "Symmetric encryption",
+                    "Asymmetric encryption",
+                    "Public key infrastructure (PKI)",
+                    "Digital signatures",
+                    "Certificates (SSL/TLS)",
+                    "Cryptographic attacks (intro)"
+                ]
+            },
+            {
+                "title": "Advanced Topics",
+                "topics": [
+                    "Reverse engineering (intro)",
+                    "Malware analysis (basic)",
+                    "Exploit development (intro)",
+                    "Cloud security basics",
+                    "Container security (Docker)",
+                    "Zero-day vulnerabilities (concept)"
+                ]
+            },
+            {
+                "title": "Specialization Paths",
+                "topics": [
+                    "Web security",
+                    "Network security",
+                    "Digital forensics",
+                    "Red team (offensive security)",
+                    "Blue team (defensive security)",
+                    "Security engineering"
+                ]
+            },
+            {
+                "title": "Practice and Real-World Skills",
+                "topics": [
+                    "Capture The Flag (CTF)",
+                    "Bug bounty programs",
+                    "Setting up a home lab",
+                    "Writing security reports",
+                    "Ethics and legal considerations",
+                    "Building a cybersecurity portfolio"
+                ]
+            }
+        ]
+    },
+    "chemistry": {
+        "subject": "Chemistry",
+        "id": "chemistry",
+        "def": "Chemistry is the study of matter, its properties, structure, composition, and the changes it undergoes. It connects physics and biology and is essential for understanding natural processes and modern technology.",
+        "description": "This roadmap is designed to guide you from the fundamental concepts of chemistry to more advanced topics in a structured and intuitive way. You will begin by understanding the basic nature of matter, measurements, and atomic structure, which form the foundation of all chemical knowledge. From there, you will explore how elements are organized in the periodic table and how atoms interact through different types of chemical bonds.\n\nAs you progress, the focus shifts to chemical reactions and quantitative analysis through stoichiometry, helping you understand how substances transform and how to calculate those changes accurately. You will then study the behavior of matter in different states, including gases and solutions, followed by the role of energy in chemical processes through thermochemistry.\n\nAdvanced topics such as reaction rates (kinetics), equilibrium systems, and acid-base chemistry will deepen your understanding of dynamic chemical processes. Finally, you will explore electrochemistry, organic chemistry, and biochemistry, which connect chemistry to real-world applications such as energy systems, materials science, environmental issues, and biological processes.\n\nBy following this roadmap, you will build a strong conceptual foundation, improve problem-solving skills, and develop the ability to connect chemistry concepts across different scientific disciplines.",
+        "roadmap": [
+            {
+                "title": "Basic Concepts of Chemistry",
+                "topics": [
+                    "Matter and its states (solid, liquid, gas)",
+                    "Physical vs chemical properties",
+                    "Physical vs chemical changes",
+                    "Elements, compounds, mixtures",
+                    "SI units and measurement",
+                    "Scientific notation and significant figures"
+                ]
+            },
+            {
+                "title": "Atomic Structure",
+                "topics": [
+                    "Subatomic particles (protons, neutrons, electrons)",
+                    "Atomic number and mass number",
+                    "Isotopes",
+                    "Atomic models (Dalton, Thomson, Rutherford, Bohr)",
+                    "Electron configuration",
+                    "Quantum numbers (intro)"
+                ]
+            },
+            {
+                "title": "Periodic Table",
+                "topics": [
+                    "Periodic table structure",
+                    "Groups and periods",
+                    "Metals, nonmetals, metalloids",
+                    "Periodic trends (atomic radius, ionization energy, electronegativity)",
+                    "Reactivity trends"
+                ]
+            },
+            {
+                "title": "Chemical Bonding",
+                "topics": [
+                    "Ionic bonding",
+                    "Covalent bonding",
+                    "Lewis structures",
+                    "Polarity of molecules",
+                    "VSEPR theory (molecular shapes)",
+                    "Intermolecular forces (dipole, hydrogen bonding, London dispersion)"
+                ]
+            },
+            {
+                "title": "Chemical Reactions and Stoichiometry",
+                "topics": [
+                    "Types of chemical reactions",
+                    "Balancing chemical equations",
+                    "Mole concept",
+                    "Stoichiometry calculations",
+                    "Limiting reagent",
+                    "Percent yield"
+                ]
+            },
+            {
+                "title": "States of Matter and Gas Laws",
+                "topics": [
+                    "Kinetic molecular theory",
+                    "Gas laws (Boyle, Charles, Gay-Lussac)",
+                    "Ideal gas equation",
+                    "Properties of liquids",
+                    "Properties of solids"
+                ]
+            },
+            {
+                "title": "Solutions and Concentration",
+                "topics": [
+                    "Types of solutions",
+                    "Solubility",
+                    "Concentration units (molarity, molality)",
+                    "Dilution",
+                    "Colligative properties (intro)"
+                ]
+            },
+            {
+                "title": "Thermochemistry",
+                "topics": [
+                    "Energy and heat",
+                    "Endothermic vs exothermic reactions",
+                    "Enthalpy",
+                    "Calorimetry",
+                    "Hess's law"
+                ]
+            },
+            {
+                "title": "Chemical Kinetics",
+                "topics": [
+                    "Reaction rate",
+                    "Factors affecting rate (temperature, concentration, catalysts)",
+                    "Activation energy",
+                    "Collision theory"
+                ]
+            },
+            {
+                "title": "Chemical Equilibrium",
+                "topics": [
+                    "Reversible reactions",
+                    "Equilibrium constant (K)",
+                    "Le Chatelier's principle",
+                    "Applications of equilibrium"
+                ]
+            },
+            {
+                "title": "Acids and Bases",
+                "topics": [
+                    "Acid-base theories (Arrhenius, Brønsted-Lowry)",
+                    "pH and pOH",
+                    "Strong vs weak acids and bases",
+                    "Neutralization reactions",
+                    "Buffer solutions (intro)"
+                ]
+            },
+            {
+                "title": "Electrochemistry",
+                "topics": [
+                    "Oxidation and reduction",
+                    "Redox reactions",
+                    "Electrochemical cells",
+                    "Electrolysis",
+                    "Standard electrode potential (intro)"
+                ]
+            },
+            {
+                "title": "Organic Chemistry Basics",
+                "topics": [
+                    "Hydrocarbons (alkanes, alkenes, alkynes)",
+                    "Functional groups",
+                    "Isomerism",
+                    "Basic reaction types",
+                    "Polymers (intro)"
+                ]
+            },
+            {
+                "title": "Biochemistry and Applied Chemistry",
+                "topics": [
+                    "Proteins, carbohydrates, lipids",
+                    "Enzymes",
+                    "Metabolism basics",
+                    "Environmental chemistry",
+                    "Industrial chemistry applications"
+                ]
+            }
+        ]
+    },
+    "programming": {
+        "id": "programming",
+        "subject": "Programming",
+        "def": "Programming is the process of designing, writing, and maintaining instructions that a computer can execute. It is a fundamental skill for building software, solving problems, and creating technology across various fields such as web development, data science, and artificial intelligence.",
+        "description": "This roadmap guides you from the fundamentals of programming to advanced software development and specialization paths. You will begin by understanding basic programming concepts such as variables, control flow, and functions, which form the foundation of all programming languages.\n\nAs you progress, you will learn data structures and algorithms, which are essential for writing efficient and scalable code. You will also explore software development tools such as version control and debugging techniques.\n\nAt intermediate levels, you will build real projects and learn how to structure applications properly. Finally, you can specialize in areas such as web development, game development, data science, or artificial intelligence, while continuing to improve problem-solving and system design skills. <a>Click here for look o</a>",
+        "roadmap": [
+            {
+                "title": "Programming Fundamentals",
+                "topics": [
+                    "What is programming",
+                    "Variables and data types",
+                    "Input and output",
+                    "Operators (arithmetic, comparison, logical)",
+                    "Conditional statements (if, else)",
+                    "Loops (for, while)",
+                    "Basic debugging"
+                ]
+            },
+            {
+                "title": "Core Programming Concepts",
+                "topics": [
+                    "Functions and parameters",
+                    "Return values",
+                    "Scope (local vs global)",
+                    "Arrays and lists",
+                    "Strings and string manipulation",
+                    "Basic problem solving",
+                    "Introduction to recursion"
+                ]
+            },
+            {
+                "title": "Data Structures",
+                "topics": [
+                    "Arrays and dynamic arrays",
+                    "Linked lists",
+                    "Stacks and queues",
+                    "Hash tables (maps/dictionaries)",
+                    "Sets",
+                    "Trees (binary tree, BST)",
+                    "Graphs (intro)"
+                ]
+            },
+            {
+                "title": "Algorithms",
+                "topics": [
+                    "Time and space complexity (Big-O)",
+                    "Searching algorithms (linear, binary)",
+                    "Sorting algorithms (bubble, selection, merge, quicksort)",
+                    "Recursion and backtracking",
+                    "Greedy algorithms",
+                    "Dynamic programming (intro)"
+                ]
+            },
+            {
+                "title": "Object-Oriented Programming (OOP)",
+                "topics": [
+                    "Classes and objects",
+                    "Encapsulation",
+                    "Inheritance",
+                    "Polymorphism",
+                    "Abstraction",
+                    "Design principles (basic)"
+                ]
+            },
+            {
+                "title": "Software Development Tools",
+                "topics": [
+                    "Using an IDE or code editor",
+                    "Command line basics",
+                    "Version control (Git)",
+                    "GitHub basics",
+                    "Debugging tools",
+                    "Code organization"
+                ]
+            },
+            {
+                "title": "Web Development Basics",
+                "topics": [
+                    "HTML structure",
+                    "CSS styling",
+                    "JavaScript basics",
+                    "DOM manipulation",
+                    "Responsive design",
+                    "Basic web project"
+                ]
+            },
+            {
+                "title": "Backend Development Basics",
+                "topics": [
+                    "What is a server",
+                    "HTTP and APIs",
+                    "Basic backend (Node.js / Python)",
+                    "Routing",
+                    "Working with JSON",
+                    "Authentication basics"
+                ]
+            },
+            {
+                "title": "Databases",
+                "topics": [
+                    "What is a database",
+                    "SQL basics (SELECT, INSERT, UPDATE, DELETE)",
+                    "Relational databases",
+                    "NoSQL basics",
+                    "Database design",
+                    "Connecting database to app"
+                ]
+            },
+            {
+                "title": "Project Development",
+                "topics": [
+                    "Building small projects",
+                    "CRUD applications",
+                    "Debugging real projects",
+                    "Deploying a website",
+                    "Portfolio development",
+                    "Writing clean code"
+                ]
+            },
+            {
+                "title": "Advanced Topics",
+                "topics": [
+                    "System design (intro)",
+                    "APIs and integration",
+                    "Testing (unit testing basics)",
+                    "Performance optimization",
+                    "Security basics",
+                    "Scalability concepts"
+                ]
+            },
+            {
+                "title": "Specialization Paths",
+                "topics": [
+                    "Web development (frontend/backend/fullstack)",
+                    "Game development (Unity, C#)",
+                    "Data science and machine learning",
+                    "Mobile app development",
+                    "Cybersecurity basics",
+                    "Competitive programming"
+                ]
+            }
+        ]
+    },
+    "uiux": {
+        "id": "design",
+        "subject": "Design (UI/UX)",
+        "def": "Design (UI/UX) is the process of creating user-friendly, visually appealing, and effective digital experiences. It focuses on how a product looks (UI) and how it works (UX) to ensure usability and satisfaction.",
+        "description": "This roadmap guides you from basic design principles to advanced user experience and interface design. You will begin by understanding visual design fundamentals such as layout, color, and typography, which form the foundation of all design work.\n\nAs you progress, you will learn user experience principles, including how users interact with digital products and how to design intuitive interfaces. You will also explore wireframing, prototyping, and usability testing.\n\nAt advanced levels, you will focus on creating professional designs, improving user flows, and building consistent design systems. The final stage emphasizes real-world application, including designing complete products and improving user engagement.",
+        "roadmap": [
+            {
+                "title": "Design Fundamentals",
+                "topics": [
+                    "What is UI and UX",
+                    "Principles of design (contrast, alignment, hierarchy)",
+                    "Layout and spacing",
+                    "Color theory",
+                    "Typography basics",
+                    "Visual consistency"
+                ]
+            },
+            {
+                "title": "User Experience (UX) Basics",
+                "topics": [
+                    "User-centered design",
+                    "Understanding user needs",
+                    "User journey",
+                    "Information architecture",
+                    "Usability principles",
+                    "Accessibility basics"
+                ]
+            },
+            {
+                "title": "User Interface (UI) Design",
+                "topics": [
+                    "Buttons, forms, and inputs",
+                    "Navigation design",
+                    "Card and layout systems",
+                    "Icons and visual elements",
+                    "Responsive design",
+                    "Dark mode design"
+                ]
+            },
+            {
+                "title": "Wireframing and Prototyping",
+                "topics": [
+                    "Low-fidelity wireframes",
+                    "High-fidelity mockups",
+                    "Prototyping basics",
+                    "User flow design",
+                    "Iterating designs",
+                    "Feedback and testing"
+                ]
+            },
+            {
+                "title": "Design Tools",
+                "topics": [
+                    "Using Figma",
+                    "Basic design workflow",
+                    "Components and reuse",
+                    "Auto layout",
+                    "Design handoff",
+                    "Collaboration"
+                ]
+            },
+            {
+                "title": "Interaction and Microinteractions",
+                "topics": [
+                    "Animations basics",
+                    "Hover and click effects",
+                    "Transitions",
+                    "Loading states",
+                    "Feedback design",
+                    "Improving user engagement"
+                ]
+            },
+            {
+                "title": "Advanced UX Concepts",
+                "topics": [
+                    "Heuristics (Nielsen principles)",
+                    "Cognitive load",
+                    "User psychology",
+                    "Behavioral design",
+                    "A/B testing basics",
+                    "Conversion optimization"
+                ]
+            },
+            {
+                "title": "Design Systems",
+                "topics": [
+                    "What is a design system",
+                    "Reusable components",
+                    "Consistency across products",
+                    "Design tokens",
+                    "Scalability",
+                    "Documentation"
+                ]
+            },
+            {
+                "title": "Real-World Product Design",
+                "topics": [
+                    "Designing a full app",
+                    "Dashboard design",
+                    "Mobile vs desktop design",
+                    "Improving existing UI",
+                    "Case studies",
+                    "Portfolio design"
+                ]
+            },
+            {
+                "title": "Developer Collaboration",
+                "topics": [
+                    "Understanding HTML/CSS for design",
+                    "Design to code workflow",
+                    "Working with developers",
+                    "Constraints and feasibility",
+                    "Responsive implementation",
+                    "UI optimization"
+                ]
+            },
+            {
+                "title": "Advanced Visual Design",
+                "topics": [
+                    "Glassmorphism and modern styles",
+                    "Minimalist design",
+                    "Advanced typography",
+                    "Brand identity",
+                    "Visual storytelling",
+                    "Creative direction"
+                ]
+            },
+            {
+                "title": "Mastery and Specialization",
+                "topics": [
+                    "UX research",
+                    "Product design thinking",
+                    "Building design portfolio",
+                    "Freelancing design",
+                    "Continuous improvement",
+                    "Design leadership"
+                ]
+            }
+        ]
+    },
+    "bussiness": {
+        "id": "business",
+        "subject": "Business & Entrepreneurship",
+        "def": "Business and Entrepreneurship involve creating, managing, and growing ventures that provide value to customers while generating profit. It combines strategy, marketing, finance, and innovation to solve real-world problems.",
+        "description": "This roadmap guides you from understanding the fundamentals of business to building and scaling your own ventures. You will begin by learning basic economic and business concepts, including how value is created and how markets work.\n\nAs you progress, you will explore idea validation, business models, and customer understanding. You will then learn essential skills such as marketing, sales, and financial management to turn ideas into real products or services.\n\nAt advanced levels, you will focus on scaling, leadership, and long-term strategy. The final stage emphasizes building sustainable businesses, adapting to market changes, and creating real-world impact.",
+        "roadmap": [
+            {
+                "title": "Business Fundamentals",
+                "topics": [
+                    "What is a business",
+                    "Types of businesses (product, service, digital)",
+                    "Value creation and problem solving",
+                    "Supply and demand basics",
+                    "Revenue, cost, and profit",
+                    "Basic business terminology"
+                ]
+            },
+            {
+                "title": "Entrepreneurial Mindset",
+                "topics": [
+                    "Opportunity recognition",
+                    "Problem-solving mindset",
+                    "Risk and reward",
+                    "Growth mindset",
+                    "Discipline and consistency",
+                    "Learning from failure"
+                ]
+            },
+            {
+                "title": "Idea Generation and Validation",
+                "topics": [
+                    "Finding business ideas",
+                    "Identifying customer problems",
+                    "Market research basics",
+                    "Competitor analysis",
+                    "Validating ideas (MVP concept)",
+                    "Feedback and iteration"
+                ]
+            },
+            {
+                "title": "Business Models",
+                "topics": [
+                    "What is a business model",
+                    "Common models (subscription, marketplace, SaaS, etc.)",
+                    "Value proposition",
+                    "Customer segments",
+                    "Revenue streams",
+                    "Cost structure"
+                ]
+            },
+            {
+                "title": "Marketing Fundamentals",
+                "topics": [
+                    "What is marketing",
+                    "Target audience",
+                    "Branding basics",
+                    "Content marketing",
+                    "Social media marketing",
+                    "Basic copywriting"
+                ]
+            },
+            {
+                "title": "Sales and Communication",
+                "topics": [
+                    "What is sales",
+                    "Persuasion basics",
+                    "Customer psychology",
+                    "Building trust",
+                    "Handling objections",
+                    "Closing deals"
+                ]
+            },
+            {
+                "title": "Finance Basics",
+                "topics": [
+                    "Revenue vs profit",
+                    "Fixed vs variable costs",
+                    "Cash flow",
+                    "Budgeting",
+                    "Pricing strategies",
+                    "Basic accounting concepts"
+                ]
+            },
+            {
+                "title": "Building a Product or Service",
+                "topics": [
+                    "Product development basics",
+                    "Minimum viable product (MVP)",
+                    "User feedback",
+                    "Iteration and improvement",
+                    "Quality and usability",
+                    "Launching a product"
+                ]
+            },
+            {
+                "title": "Operations and Management",
+                "topics": [
+                    "Daily operations",
+                    "Time management",
+                    "Team basics",
+                    "Delegation",
+                    "Process optimization",
+                    "Customer support"
+                ]
+            },
+            {
+                "title": "Scaling a Business",
+                "topics": [
+                    "Growth strategies",
+                    "Automation",
+                    "Hiring and team building",
+                    "Expanding markets",
+                    "Partnerships",
+                    "Brand growth"
+                ]
+            },
+            {
+                "title": "Digital Business and Online Opportunities",
+                "topics": [
+                    "Freelancing",
+                    "Building a personal brand",
+                    "E-commerce basics",
+                    "Digital products",
+                    "Affiliate marketing",
+                    "Monetizing skills (coding, design, etc.)"
+                ]
+            },
+            {
+                "title": "Advanced Strategy and Leadership",
+                "topics": [
+                    "Long-term vision",
+                    "Decision making",
+                    "Leadership skills",
+                    "Business ethics",
+                    "Innovation",
+                    "Adapting to change"
+                ]
+            },
+            {
+                "title": "Real-World Practice",
+                "topics": [
+                    "Starting a small business",
+                    "Building a portfolio",
+                    "Learning from case studies",
+                    "Networking",
+                    "Pitching ideas",
+                    "Continuous learning"
+                ]
+            }
+        ]
+    }
+}

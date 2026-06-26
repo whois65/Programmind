@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roadmap - Programmind</title>
     <link rel="stylesheet" href="reset.css">
+    <script src="main.js"></script>
     <style>
         /* ===== RESET ===== */
         * {
@@ -14,32 +15,6 @@
             box-sizing: border-box;
             font-family: system-ui, -apple-system, sans-serif;
         }
-
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* ===== HERO ===== */
-        .header {
-            padding: 60px 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #4f46e5, #7c3aed);
-            color: white;
-        }
-
-        .header h2 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .header p {
-            opacity: 0.9;
-            max-width: 500px;
-            margin: auto;
-        }
-
 
         /* ===== GRID ===== */
         .container {
@@ -51,11 +26,10 @@
 
         /* ===== CARD ===== */
         .card {
-            background: rgba(255, 255, 255, 0.05);
             border-radius: 16px;
             padding: 20px;
             transition: 0.3s;
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--accent-hover);
         }
 
         .card:hover {
@@ -75,122 +49,139 @@
             line-height: 1.5;
         }
 
-        /* ===== FOOTER ===== */
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            color: #94a3b8;
-            margin-top: 30px;
+        /* ==== TAG ==== */
+        .tag {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
-
-    <!-- NAVBAR -->
     <header>
         <div class="logo">Programmind</div>
-
-        <nav id="nav">
-            <a href="index.html">Home</a>
-            <a href="index.html">Blog</a>
+        <nav class="nav-menu" id="nav">
+            <a href="../index.html">Home</a>
+            <a href="../index.html">Blog</a>
             <a href="https://whois65.github.io/portfolio/">About</a>
             <a href="https://whois65.github.io/portfolio/#contact">Contact</a>
             <button class="toggle" onclick="toggleDark()">🌙</button>
         </nav>
-
         <div class="hamburger" onclick="document.getElementById('nav').classList.toggle('active')">
             <span></span>
             <span></span>
             <span></span>
         </div>
-
     </header>
-
     <main>
-        <!-- HERO -->
-        <section class="header">
+        <section class="hero">
             <h2>Learning Roadmap</h2>
             <p>
                 A structured path to master subjects step by step.
                 Stay consistent, keep improving, and build your future.
             </p>
         </section>
-
-        <!-- ROADMAP GRID -->
         <section class="container"></section>
     </main>
-
-
-    <!-- FOOTER -->
     <footer>
-        © 2026 Programmind. Built for growth.
+        <p>© 2026 Programmind. Built for growth.</p>
     </footer>
     <script>
         const roadmaps = [
             {
-                subject: "Mathematics",
-                url: "",
-                description: "Build strong logical thinking and problem-solving skills."
+                subject: "Biology",
+                tag: "Science",
+                url: "biology",
+                description: "Explore living systems, from cells to ecosystems, and understand how life works."
+            },
+            {
+                subject: "Business",
+                tag: "Economics",
+                url: "business",
+                description: "Learn how to create value, build ventures, and turn ideas into income."
+            },
+            {
+                subject: "Chemistry",
+                tag: "Science",
+                url: "chemistry",
+                description: "Study matter, its structure, and the reactions that shape the world."
+            },
+            {
+                subject: "Economics",
+                tag: "Economics",
+                url: "economics",
+                description: "Understand how money, markets, and global economies work."
             },
             {
                 subject: "English",
-                url: "",
+                tag: "Language",
+                url: "english",
                 description: "Improve communication, writing, and global understanding."
             },
             {
                 subject: "Indonesian",
-                url: "",
-                description: "Strengthen formal writing and academic language skills."
-            },
-            {
-                subject: "Physics",
-                url: "",
-                description: "Understand the laws of nature and how the universe works."
-            },
-            {
-                subject: "Chemistry",
-                url: "",
-                description: "Explore matter, reactions, and atomic structures."
+                tag: "Language",
+                url: "indonesian",
+                description: "Master formal writing and effective communication in your native language."
             },
             {
                 subject: "Japanese",
-                url: "",
-                description: "Master grammar, kanji, and real-life conversation."
+                tag: "Language",
+                url: "japanese",
+                description: "Master grammar, kanji, and real-world communication skills."
             },
             {
                 subject: "Mandarin",
-                url: "",
-                description: "Learn tones, characters, and daily communication."
+                tag: "Language",
+                url: "mandarin",
+                description: "Learn tones, characters, and practical daily communication."
+            },
+            {
+                subject: "Mathematics",
+                url: "math",
+                description: "Build strong logical thinking and problem-solving skills."
+            },
+            {
+                subject: "Philosophy",
+                url: "philosophy",
+                description: "Develop critical thinking, logic, and a deeper understanding of life and reality."
+            },
+            {
+                subject: "Physics",
+                tag: "Science",
+                url: "physics",
+                description: "Understand the fundamental laws that govern the universe."
             },
             {
                 subject: "Programming",
-                url: "",
-                description: "Build software, solve problems, and create projects."
+                url: "programming",
+                description: "Build software, solve real-world problems, and create powerful projects."
             },
             {
                 subject: "Cybersecurity",
-                url: "",
-                description: "Understand systems, networks, and digital security."
+                url: "cybersecurity",
+                description: "Protect systems, understand threats, and secure digital environments."
             },
             {
-                subject: "Economics",
-                url: "",
-                description: "Understand macroeconomics, stock, currency and gold"
+                subject: "UI/UX Design",
+                url: "uiux",
+                description: "Design intuitive, modern, and user-friendly digital experiences."
             }
-        ]
+        ];
         roadmaps.forEach(roadmap => {
             let a = document.createElement("a");
-            a.innerHTML = `
-            <div class="card">
-                <h3>${roadmap.subject}</h3>
-                <p>${roadmap.description}</p>
-            </div>`;
+            if (roadmap.tag !== undefined)  a.innerHTML = `<div class="card"><div class="tag">${roadmap.tag}</div><h3>${roadmap.subject}</h3><p>${roadmap.description}</p></div>`;
+            else  a.innerHTML = `<div class="card"><h3>${roadmap.subject}</h3><p>${roadmap.description}</p></div>`;
+            a.href = "roadmap/index.html?subject=" + roadmap.url
+            a.style = "text-decoration: none;color: inherit;"
             document.querySelector(".container").appendChild(a)
         });
     </script>
-    <script src="dark.js"></script>
 </body>
 
 </html>

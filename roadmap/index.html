@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap - Programmind</title>
+    <link rel="stylesheet" href="../reset.css">
+    <script src="../main.js"></script>
+    <style>
+        main {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* CARD */
+        .roadmap-card {
+            background: var(--card);
+            padding: 18px;
+            margin: 20px 0;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: 0.2s;
+        }
+
+        .roadmap-card:hover {
+            transform: translateY(-3px);
+        }
+
+        /* TITLE */
+        .roadmap-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* LIST */
+        .roadmap-card ol {
+            padding-left: 30px;
+        }
+
+        .roadmap-card li {
+            margin: 6px 0;
+        }
+
+        /* CHECKBOX STYLE */
+        .roadmap-card input[type="checkbox"] {
+            margin-right: 8px;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        /* CHECKED STYLE */
+        .roadmap-card input:checked+span {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+
+        /* PROGRESS BAR UPGRADE */
+        .progress-bar {
+            height: 16px;
+            border-radius: 20px;
+        }
+
+        #progressFill {
+            border-radius: 20px;
+        }
+
+        .progress-container {
+            margin: 20px 0 30px;
+        }
+
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 14px;
+            background: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #progressFill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            transition: width 0.3s ease;
+        }
+
+        label {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Programmind</div>
+
+        <nav class="nav-menu" id="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html">Blog</a>
+            <a href="https://whois65.github.io/portfolio/">About</a>
+            <a href="https://whois65.github.io/portfolio/#contact">Contact</a>
+            <button class="toggle" onclick="toggleDark()">🌙</button>
+        </nav>
+
+        <div class="hamburger" onclick="document.getElementById('nav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+    <main>
+        <div class="hero">
+            <h1 id="subject">Loading...</h1>
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span>Progress to Mastery</span>
+                    <span id="progressText">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div id="progressFill"></div>
+                </div>
+            </div>
+        </div>
+        <div class="roadmap-card">
+            <h2>Definition</h2>
+            <p id="def"></p>
+            <br>
+            <h2>Description</h2>
+            <p id="description"></p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2026 <strong>Programmind</strong>. All rights reserved.</p>
+    </footer>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        let subject = params.get("subject") || "math";
+        fetch("main.json").then(res => res.json()).then(data => {
+            const roadmap = data[subject]
+            if (!roadmap) {
+                document.body.innerHTML = "<h1>Roadmap not found 😢</h1>";
+                return;
+            }
+
+            qi("subject").textContent = roadmap.subject + " Roadmap";
+            document.title = roadmap.subject + " Roadmap - Programmind"
+
+            let progress = JSON.parse(localStorage.getItem(roadmap.id)) || {},
+                countTopic = 0;
+
+            qi("def").textContent = roadmap.def
+            qi("description").textContent = roadmap.description || "No description available.";
+
+            roadmap.roadmap.forEach((topic, topicIndex) => {
+                countTopic += 1;
+                let list = "",
+                    div = document.createElement("div");
+                div.className = "roadmap-card";
+                topic.topics.forEach((item, itemIndex) => {
+                    let id = `${topicIndex}-${itemIndex}`; // unique ID
+                    let checked = progress[id] ? "checked" : "";
+                    list += `<li><label><input type="checkbox" data-id="${id}" ${checked}><span>${item}</span></label></li>`;
+                });
+                div.innerHTML = `<h2 onclick="toggleSection(this)">${countTopic}. ${topic.title}</h2><ol>${list}</ol>`;
+                document.querySelector("main").appendChild(div);
+            });
+
+            // total topics
+            let totalTopics = 0;
+            roadmap.roadmap.forEach(r => totalTopics += r.topics.length);
+
+            // update progress
+            function updateProgress() {
+                let completed = Object.keys(progress).length,
+                    percent = Math.round((completed / totalTopics) * 100),
+                    bar = document.getElementById("progressFill");
+                bar.style.width = percent + "%";
+                document.getElementById("progressText").textContent = percent + "%";
+                if (percent < 30) bar.style.background = "#ff4d4d";
+                else if (percent < 70) bar.style.background = "#ffaa00";
+                else bar.style.background = "#00c851";
+            }
+
+            function toggleSection(el) {
+                let list = el.nextElementSibling;
+                list.style.display = list.style.display === "none" ? "block" : "none";
+            }
+
+            document.addEventListener("change", function (e) {
+                if (e.target.matches("input[type='checkbox']")) {
+                    let id = e.target.dataset.id;
+                    if (e.target.checked) progress[id] = true;
+                    else delete progress[id];
+
+                    localStorage.setItem(roadmap.id, JSON.stringify(progress));
+                    updateProgress();
+                }
+            });
+
+            // init
+            updateProgress();
+        })
+        const lastChecked = document.querySelector("input:checked");
+        if (lastChecked) lastChecked.scrollIntoView({ behavior: "smooth", block: "center" });
+    </script>
+</body>
+
+</html>
