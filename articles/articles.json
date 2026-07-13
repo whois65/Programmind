@@ -41,23 +41,6 @@
         "description": "Financial Management"
     },
     {
-        "title": "Quotes",
-        "date": "",
-        "image": "quotes.avif",
-        "tag": [
-            "Tips","Learn", "Quotes"],
-        "id": "quotes",
-        "description": "My quotes"
-    },
-    {
-        "title": "Ruangsunyi",
-        "date": "",
-        "image": "poem.jpg",
-        "tag": ["Poem", "Quotes"],
-        "id": "ruangsunyi(puisi)",
-        "description": "Poem Website."
-    },
-    {
         "title": "Manyougana (万葉仮名)",
         "date": "",
         "image": "manyougana.png",
