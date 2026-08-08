@@ -17,7 +17,7 @@
         .roadmap-card {
             background: var(--card);
             padding: 18px;
-            margin: 20px 0;
+            margin: 30px;
             border-radius: 14px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             transition: 0.2s;
@@ -148,7 +148,7 @@
         fetch("main.json").then(res => res.json()).then(data => {
             const roadmap = data[subject]
             if (!roadmap) {
-                document.body.innerHTML = "<h1>Roadmap not found 😢</h1>";
+                document.body.innerHTML = "<h1>Roadmap not found</h1>";
                 return;
             }
 

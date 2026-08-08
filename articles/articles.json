@@ -47,13 +47,5 @@
         "tag": ["History", "Japan"],
         "id": "manyougana",
         "description": "Manyōgana (万葉仮名) is an ancient Japanese writing system in which Chinese characters (kanji) were used to represent the sounds of the Japanese language. Instead of conveying meaning, these kanji were selected purely for their phonetic value."
-    },
-    {
-        "title": "Markdown Editor",
-        "date": "",
-        "image": "https://markdown-here.com/img/icon256.png",
-        "tag": ["Tools", "Application"],
-        "id": "https://whois65.github.io/md-editor/",
-        "description": "A web application to write markdown, math equations, tables and much more"
     }
 ]
