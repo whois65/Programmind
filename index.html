@@ -4,787 +4,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Scores</title>
-    <!-- Primary Meta -->
-    <meta name="title" content="Academic Scores">
-    <meta name="description"
-        content="A lightweight web application for managing academic scores across semesters, with automatic average calculation and Excel/CSV import/export.">
-    <meta name="keywords" content="Academic, Academic Scores">
-    <meta name="author" content="Muhammad Raffiqi">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="theme-color" content="#3b6e5e">
-
-    <!-- Open Graph / Discord / WhatsApp -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Academic Scores">
-    <meta property="og:description"
-        content="A lightweight web application for managing academic scores across semesters, with automatic average calculation and Excel/CSV import/export.">
-    <meta property="og:url" content="https://whois65.github.io/academic_scores/">
-    <meta property="og:site_name" content="Academic Scores">
-    <meta property="og:image" content="https://whois65.github.io/academic_scores/assets/screenshot.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Academic Scores Preview">
-
-    <!-- Mobile / Apple -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Academic Scores">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://whois65.github.io/academic_scores/">
-
-    <!-- Libraries -->
+    <title>Programmind</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="scripts/main.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
     <style>
-        :root {
-            --ink: #22252a;
-            --ink-soft: #6b7075;
-            --paper: #fbfaf7;
-            --line: #dcd8d0;
-            --accent: #3b6e5e;
-            --accent-soft: #e7efec;
-            --danger: #a4433a;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: var(--paper);
-            color: var(--ink);
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            padding: 40px 24px 80px;
-        }
-
-        .wrap {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        header {
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        h1 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-        }
-
-        h1 span {
+        /* ==== BUTTON ==== */
+        .btn {
+            margin-top: 15px;
+            padding: 8px 18px;
+            border-radius: 8px;
+            border: none;
             color: var(--accent);
-        }
-
-        .actions {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        button {
-            font: inherit;
+            background: #fff;
             cursor: pointer;
-            border-radius: 6px;
-            border: 1px solid var(--line);
-            background: white;
-            color: var(--ink);
-            padding: 8px 14px;
-            font-size: 0.85rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            transition: background 0.15s, border-color 0.15s;
-            white-space: nowrap;
         }
 
-        button:hover {
-            border-color: var(--accent);
-            color: var(--accent);
+        /* ==== ARTICLES ==== */
+        section {
+            padding: 20px;
         }
 
-        button.primary {
-            background: var(--accent);
-            color: white;
-            border-color: var(--accent);
-        }
-
-        button.primary:hover {
-            opacity: 0.9;
-            color: white;
-        }
-
-        button.danger:hover {
-            border-color: var(--danger);
-            color: var(--danger);
-        }
-
-        .toolbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-bottom: 14px;
-        }
-
-        .search-box {
-            position: relative;
-            flex: 1;
-            min-width: 160px;
-            max-width: 260px;
-        }
-
-        .search-box i {
-            position: absolute;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--ink-soft);
-            font-size: 0.9rem;
-            pointer-events: none;
-        }
-
-        .search-box input {
-            width: 100%;
-            font: inherit;
-            padding: 7px 10px 7px 30px;
-            border: 1px solid var(--line);
-            border-radius: 6px;
-            background: white;
-            color: var(--ink);
-        }
-
-        .search-box input:focus {
-            outline: none;
-            border-color: var(--accent);
-        }
-
-        .table-scroll {
-            overflow-x: auto;
-            border: 1px solid var(--line);
-            border-radius: 10px;
-            background: white;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        #mainTab {
+        .articles {
             display: grid;
-            min-width: 560px;
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
         }
 
-        .row {
-            display: contents;
-        }
-
-        .cell {
-            padding: 10px 14px;
-            border-bottom: 1px solid var(--line);
-            border-right: 1px solid var(--line);
+        .article {
             display: flex;
-            align-items: center;
-            font-size: 0.9rem;
-            min-height: 42px;
-            min-width: 0;
+            gap: 15px;
+            background: var(--card);
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, .05);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn .5s forwards;
         }
 
-        .row .cell:last-child {
-            border-right: none;
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        .row .cell:first-child {
-            position: sticky;
-            left: 0;
-            background: white;
-            z-index: 1;
+        .article:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
         }
 
-        .head.cell:first-child {
-            background: var(--accent-soft);
-            z-index: 2;
+        .article img {
+            width: 180px;
+            border-radius: 10px;
+            object-fit: cover;
         }
 
-        .head {
-            background: var(--accent-soft);
-            font-weight: 600;
-            color: var(--accent);
-            font-size: 0.78rem;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-            gap: 6px;
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
-        .head.sortable {
-            cursor: pointer;
-            user-select: none;
+        .container p {
+            color: var(--sub);
+            font-size: 14px;
+            line-height: 1.6;
         }
 
-        .head.sortable:hover {
-            color: var(--ink);
+        /* ==== TAG ==== */
+        .tags {
+            gap: 10px;
+            display: flex;
         }
 
-        .head .sort-icon {
-            font-size: 0.85rem;
-            opacity: 0.6;
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            background: var(--accent);
+            color: #fff;
+            font-size: 12px;
         }
 
-        .sem-head {
-            justify-content: space-between;
-        }
-
-        .sem-del {
-            border: none;
-            background: transparent;
-            color: var(--accent);
-            opacity: 0.5;
-            padding: 2px 4px;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            line-height: 1;
-        }
-
-        .sem-del:hover {
-            opacity: 1;
-            color: var(--danger);
-            background: #f4e7e5;
-        }
-
-        .lesson-name {
-            font-weight: 600;
-            cursor: pointer;
-            border-radius: 4px;
-            width: 100%;
-        }
-
-        .lesson-name:hover {
-            background: var(--accent-soft);
-        }
-
-        .cell input[type="text"],
-        .cell input[type="number"] {
-            font: inherit;
-            width: 100%;
-            min-width: 0;
-            max-width: 100%;
+        /* ==== BUTTON ==== */
+        .container button {
+            margin-top: auto;
+            align-self: flex-start;
+            padding: 6px 14px;
+            border-radius: 6px;
             border: 1px solid var(--accent);
-            border-radius: 4px;
-            padding: 4px 6px;
-            font-variant-numeric: tabular-nums;
-        }
-
-        .score {
+            background: none;
             cursor: pointer;
-            font-variant-numeric: tabular-nums;
-            border-radius: 4px;
-            width: 100%;
-            min-width: 0;
+            color: var(--accent);
         }
 
-        .score:hover {
-            background: var(--accent-soft);
+        .container button:hover {
+            background: var(--accent);
+            color: #fff;
         }
 
-        .average {
-            font-weight: 700;
-            font-variant-numeric: tabular-nums;
-        }
-
-        .row-actions {
-            justify-content: center;
-        }
-
-        .icon-btn {
-            border: none;
-            background: transparent;
-            color: var(--ink-soft);
-            padding: 4px 8px;
-            font-size: 0.95rem;
-            border-radius: 4px;
-        }
-
-        .icon-btn:hover {
-            color: var(--danger);
-            background: #f4e7e5;
-        }
-
-        .empty {
-            padding: 32px;
-            text-align: center;
-            color: var(--ink-soft);
-            font-size: 0.9rem;
-        }
-
-        #importStatus {
-            font-size: 0.8rem;
-            color: var(--ink-soft);
-            margin-bottom: 12px;
-            display: none;
-        }
-
-        .hint {
-            font-size: 0.75rem;
-            color: var(--ink-soft);
-            margin-top: 10px;
-        }
-
-        /* ---- Mobile ---- */
-        @media (max-width: 640px) {
-            body {
-                padding: 20px 12px 60px;
-            }
-
-            h1 {
-                font-size: 1.3rem;
-            }
-
-            header {
+        /* ==== MOBILE ==== */
+        @media(max-width:768px) {
+            nav {
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 20px;
                 flex-direction: column;
-                align-items: stretch;
+                background: var(--card);
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
             }
 
-            .actions {
-                justify-content: flex-start;
+            nav.active {
+                display: flex;
             }
 
-            button {
-                padding: 8px 10px;
-                font-size: 0.8rem;
+            .hamburger {
+                display: flex;
             }
 
-            .toolbar {
+            .article {
                 flex-direction: column;
-                align-items: stretch;
-            }
-
-            .search-box {
-                max-width: none;
-            }
-
-            .cell {
-                padding: 8px 10px;
-                font-size: 0.85rem;
-                min-height: 38px;
-            }
-
-            #mainTab {
-                min-width: 480px;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="wrap">
-        <header>
-            <h1>Academic <span>Scores</span></h1>
-            <div class="actions">
-                <button id="importBtn"><i class="ti ti-file-import"></i> Import</button>
-                <button id="exportBtn"><i class="ti ti-file-export"></i> Export</button>
-                <button id="resetBtn" class="danger"><i class="ti ti-trash"></i> Reset</button>
-                <button id="addSemesterBtn"><i class="ti ti-plus"></i> Semester</button>
-                <button id="addLessonBtn" class="primary"><i class="ti ti-plus"></i> Lesson</button>
-            </div>
-        </header>
+    <header>
+        <div class="logo" onclick="location.href = 'index.html'">Programmind</div>
 
-        <input type="file" id="fileInput" accept=".xlsx,.xls,.csv" style="display:none;">
-        <div id="importStatus"></div>
+        <nav class="nav-menu" id="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html">Blog</a>
+            <a href="https://whois65.github.io/portfolio/">About</a>
+            <a href="https://whois65.github.io/portfolio/#contact">Contact</a>
+            <button class="toggle" onclick="toggleDark()"><i id="toggleDarkIcon" class="ti ti-moon"></i></button>
+        </nav>
 
-        <div class="toolbar">
-            <div class="search-box">
-                <i class="ti ti-search"></i>
-                <input type="text" id="searchInput" placeholder="Search lessons...">
-            </div>
+        <div class="hamburger" onclick="document.getElementById('nav').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
-        <div class="table-scroll">
-            <div id="mainTab"></div>
-        </div>
-        <p class="hint">Tip: click a lesson name or score to edit it. Scroll sideways on small screens to see all
-            semesters.</p>
-    </div>
+    </header>
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <h1>Learning today to build the future</h1>
+            <p>Exploring technology, languages, and the future—one step at a time.</p>
+            <button class="btn" onclick="document.getElementById('articles').scrollIntoView({behavior:'smooth'})">
+                Start Reading
+            </button>
+        </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+        <!-- ARTICLES -->
+        <section id="articles" class="articles">
+            
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 <strong>Programmind</strong>. All rights reserved.</p>
+    </footer>
     <script>
-        const $ = x => document.getElementById(x);
-        const STORAGE_KEY = "academicScores";
-
-        let data = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {
-            "Mathematics": [87, 89, 93],
-            "Physics": [76, 89, 96]
-        };
-
-        let searchTerm = "";
-        let sortState = { key: null, dir: 1 }; // key: "name" | "average"
-
-        function save() {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-        }
-
-        function semesterCount() {
-            return Object.values(data).reduce((max, l) => Math.max(max, l.length), 0);
-        }
-
-        function average(scores) {
-            const nums = scores.filter(v => v !== null && v !== undefined && v !== "" && !isNaN(v)).map(Number);
-            if (nums.length === 0) return null;
-            return nums.reduce((a, b) => a + b, 0) / nums.length;
-        }
-
-        function displayAverage(scores) {
-            const avg = average(scores);
-            return avg === null ? "-" : avg.toFixed(2);
-        }
-
-        function getVisibleLessons() {
-            let names = Object.keys(data);
-            if (searchTerm.trim()) {
-                const q = searchTerm.trim().toLowerCase();
-                names = names.filter(n => n.toLowerCase().includes(q));
-            }
-            if (sortState.key === "name") {
-                names.sort((a, b) => a.localeCompare(b) * sortState.dir);
-            } else if (sortState.key === "average") {
-                names.sort((a, b) => {
-                    const avA = average(data[a]);
-                    const avB = average(data[b]);
-                    const va = avA === null ? -Infinity : avA;
-                    const vb = avB === null ? -Infinity : avB;
-                    return (va - vb) * sortState.dir;
-                });
-            }
-            return names;
-        }
-
-        function sortIcon(key) {
-            if (sortState.key !== key) return "";
-            return sortState.dir === 1 ? "<i class='ti ti-arrow-up sort-icon'></i>" : "<i class='ti ti-arrow-down sort-icon'></i>";
-        }
-
-        function render() {
-            const table = $("mainTab");
-            table.innerHTML = "";
-            const allLessons = Object.keys(data);
-            const lessons = getVisibleLessons();
-            const semesters = Math.max(semesterCount(), 1);
-            table.style.gridTemplateColumns = `1.4fr repeat(${semesters}, 0.9fr) 0.8fr 0.5fr`;
-
-            if (allLessons.length === 0) {
-                table.innerHTML = `<div class="empty">No lessons yet. Add one to get started.</div>`;
-                return;
-            }
-            if (lessons.length === 0) {
-                table.innerHTML = `<div class="empty">No lessons match "${searchTerm}".</div>`;
-                return;
-            }
-
-            // Header row
-            const head = document.createElement("div");
-            head.className = "row";
-
-            const nameHead = document.createElement("div");
-            nameHead.className = "cell head sortable";
-            nameHead.innerHTML = `Lesson ${sortIcon("name")}`;
-            nameHead.onclick = () => {
-                sortState = sortState.key === "name" ? { key: "name", dir: -sortState.dir } : { key: "name", dir: 1 };
-                render();
-            };
-            head.appendChild(nameHead);
-
-            for (let i = 0; i < semesters; i++) {
-                const semHead = document.createElement("div");
-                semHead.className = "cell head sem-head";
-                const label = document.createElement("span");
-                label.textContent = `Sem ${i + 1}`;
-                semHead.appendChild(label);
-                const delBtn = document.createElement("button");
-                delBtn.className = "sem-del";
-                delBtn.innerHTML = "<i class='ti ti-x'></i>";
-                delBtn.title = `Delete Semester ${i + 1}`;
-                delBtn.onclick = (e) => {
-                    e.stopPropagation();
-                    deleteSemester(i);
-                };
-                semHead.appendChild(delBtn);
-                head.appendChild(semHead);
-            }
-
-            const avgHead = document.createElement("div");
-            avgHead.className = "cell head sortable";
-            avgHead.innerHTML = `Average ${sortIcon("average")}`;
-            avgHead.onclick = () => {
-                sortState = sortState.key === "average" ? { key: "average", dir: -sortState.dir } : { key: "average", dir: -1 };
-                render();
-            };
-            head.appendChild(avgHead);
-
-            head.innerHTML += `<div class="cell head"></div>`;
-            table.appendChild(head);
-
-            // Lesson rows
-            lessons.forEach(lessonName => {
-                const scores = data[lessonName];
-                const row = document.createElement("div");
-                row.className = "row";
-
-                const nameCell = document.createElement("div");
-                nameCell.className = "cell";
-                const nameEl = document.createElement("div");
-                nameEl.className = "lesson-name";
-                nameEl.textContent = lessonName;
-                nameEl.onclick = () => {
-                    const input = document.createElement("input");
-                    input.type = "text";
-                    input.value = lessonName;
-                    nameCell.innerHTML = "";
-                    nameCell.appendChild(input);
-                    input.focus();
-                    input.select();
-
-                    const commit = () => {
-                        const newName = input.value.trim();
-                        if (!newName || newName === lessonName) {
-                            render();
-                            return;
-                        }
-                        renameLesson(lessonName, newName);
-                    };
-                    input.addEventListener("keydown", e => {
-                        if (e.key === "Enter") commit();
-                        if (e.key === "Escape") render();
-                    });
-                    input.addEventListener("blur", commit);
-                };
-                nameCell.appendChild(nameEl);
-                row.appendChild(nameCell);
-
-                const avgCell = document.createElement("div");
-                avgCell.className = "cell average";
-
-                for (let i = 0; i < semesters; i++) {
-                    const cell = document.createElement("div");
-                    cell.className = "cell";
-                    const scoreEl = document.createElement("div");
-                    scoreEl.className = "score";
-                    const val = scores[i];
-                    scoreEl.textContent = (val === undefined || val === null || val === "") ? "-" : val;
-
-                    scoreEl.onclick = () => {
-                        const input = document.createElement("input");
-                        input.type = "number";
-                        input.value = (val === undefined || val === null) ? "" : val;
-                        cell.innerHTML = "";
-                        cell.appendChild(input);
-                        input.focus();
-                        input.select();
-
-                        const commit = () => {
-                            const newVal = input.value === "" ? "" : Number(input.value);
-                            data[lessonName][i] = newVal;
-                            save();
-                            render();
-                        };
-                        input.addEventListener("keydown", e => {
-                            if (e.key === "Enter") commit();
-                            if (e.key === "Escape") render();
-                        });
-                        input.addEventListener("blur", commit);
-                    };
-
-                    cell.appendChild(scoreEl);
-                    row.appendChild(cell);
-                }
-
-                avgCell.textContent = displayAverage(scores);
-                row.appendChild(avgCell);
-
-                const actionCell = document.createElement("div");
-                actionCell.className = "cell row-actions";
-                const delBtn = document.createElement("button");
-                delBtn.className = "icon-btn";
-                delBtn.innerHTML = "<i class='ti ti-trash'></i>";
-                delBtn.title = `Remove ${lessonName}`;
-                delBtn.onclick = () => {
-                    if (!confirm(`Remove "${lessonName}"?`)) return;
-                    delete data[lessonName];
-                    save();
-                    render();
-                };
-                actionCell.appendChild(delBtn);
-                row.appendChild(actionCell);
-
-                table.appendChild(row);
-            });
-        }
-
-        function addLesson(lessonName) {
-            if (!lessonName || data.hasOwnProperty(lessonName)) return false;
-            data[lessonName] = new Array(Math.max(semesterCount(), 1)).fill("");
-            save();
-            render();
-            return true;
-        }
-
-        function renameLesson(oldName, newName) {
-            if (data.hasOwnProperty(newName)) {
-                showStatus(`A lesson named "${newName}" already exists.`, true);
-                render();
-                return false;
-            }
-            const rebuilt = {};
-            Object.keys(data).forEach(key => {
-                rebuilt[key === oldName ? newName : key] = data[key];
-            });
-            data = rebuilt;
-            save();
-            render();
-            return true;
-        }
-
-        function addSemester() {
-            Object.keys(data).forEach(name => data[name].push(""));
-            save();
-            render();
-        }
-
-        function deleteSemester(index) {
-            const semesters = semesterCount();
-            if (semesters <= 1) {
-                showStatus("At least one semester is required.", true);
-                return;
-            }
-            if (!confirm(`Delete Semester ${index + 1} for all lessons? This can't be undone.`)) return;
-            Object.keys(data).forEach(name => {
-                data[name].splice(index, 1);
-            });
-            save();
-            render();
-        }
-
-        $("addLessonBtn").onclick = () => {
-            const name = prompt("New lesson name:");
-            if (name && name.trim()) addLesson(name.trim());
-        };
-
-        $("addSemesterBtn").onclick = addSemester;
-
-        $("resetBtn").onclick = () => {
-            if (!confirm("Clear all lessons and scores? This can't be undone.")) return;
-            data = {};
-            searchTerm = "";
-            $("searchInput").value = "";
-            save();
-            render();
-        };
-
-        $("searchInput").addEventListener("input", (e) => {
-            searchTerm = e.target.value;
-            render();
-        });
-
-        function showStatus(msg, isError) {
-            const el = $("importStatus");
-            el.textContent = msg;
-            el.style.color = isError ? "var(--danger)" : "var(--ink-soft)";
-            el.style.display = "block";
-            clearTimeout(showStatus._t);
-            showStatus._t = setTimeout(() => { el.style.display = "none"; }, 4000);
-        }
-
-        // ---- Export to Excel ----
-        $("exportBtn").onclick = () => {
-            const semesters = Math.max(semesterCount(), 1);
-            const header = ["Lesson", ...Array.from({ length: semesters }, (_, i) => `Semester ${i + 1}`), "Average"];
-            const rows = Object.keys(data).map(lessonName => {
-                const scores = data[lessonName];
-                const padded = Array.from({ length: semesters }, (_, i) => scores[i] ?? "");
-                return [lessonName, ...padded, displayAverage(scores)];
-            });
-
-            const ws = XLSX.utils.aoa_to_sheet([header, ...rows]);
-            ws["!cols"] = [{ wch: 20 }, ...Array.from({ length: semesters }, () => ({ wch: 10 })), { wch: 10 }];
-            const wb = XLSX.utils.book_new();
-            XLSX.utils.book_append_sheet(wb, ws, "Scores");
-            XLSX.writeFile(wb, "academic-scores.xlsx");
-            showStatus("Exported academic-scores.xlsx");
-        };
-
-        // ---- Import from Excel/CSV ----
-        $("importBtn").onclick = () => $("fileInput").click();
-
-        $("fileInput").addEventListener("change", (e) => {
-            const file = e.target.files[0];
-            if (!file) return;
-
-            const reader = new FileReader();
-            reader.onload = (evt) => {
-                try {
-                    const wb = XLSX.read(evt.target.result, { type: "array" });
-                    const sheet = wb.Sheets[wb.SheetNames[0]];
-                    const rows = XLSX.utils.sheet_to_json(sheet, { header: 1, raw: true, defval: "" });
-
-                    if (rows.length < 2) {
-                        showStatus("No data rows found in file.", true);
-                        return;
-                    }
-
-                    const header = rows[0].map(h => String(h).trim().toLowerCase());
-                    const lessonIdx = header.findIndex(h => h === "lesson" || h === "subject" || h === "course");
-                    if (lessonIdx === -1) {
-                        showStatus('Could not find a "Lesson" column in the file.', true);
-                        return;
-                    }
-                    const semesterIdxs = header
-                        .map((h, i) => ({ h, i }))
-                        .filter(({ h, i }) => i !== lessonIdx && h !== "average" && !h.includes("average"));
-
-                    if (semesterIdxs.length === 0) {
-                        showStatus("No semester score columns found.", true);
-                        return;
-                    }
-
-                    const newData = {};
-                    for (let r = 1; r < rows.length; r++) {
-                        const row = rows[r];
-                        const lessonName = String(row[lessonIdx] ?? "").trim();
-                        if (!lessonName) continue;
-                        const scores = semesterIdxs.map(({ i }) => {
-                            const v = row[i];
-                            return (v === "" || v === undefined || v === null) ? "" : Number(v);
-                        });
-                        newData[lessonName] = scores;
-                    }
-
-                    if (Object.keys(newData).length === 0) {
-                        showStatus("No valid lesson rows found.", true);
-                        return;
-                    }
-
-                    data = newData;
-                    searchTerm = "";
-                    $("searchInput").value = "";
-                    save();
-                    render();
-                    showStatus(`Imported ${Object.keys(newData).length} lesson(s) from ${file.name}.`);
-                } catch (err) {
-                    showStatus("Failed to read file: " + err.message, true);
-                } finally {
-                    e.target.value = "";
-                }
-            };
-            reader.readAsArrayBuffer(file);
-        });
-
-        render();
+        fetch("articles/articles.json").then(res => res.json()).then(contents => {
+            qi("articles").innerHTML += "<h2>Latest Posts</h2>";
+            contents.forEach(content => {
+                const article = document.createElement("div");
+                let tags = ""
+                content.tag.forEach(tag => {
+                    tags += `<div class="tag">${tag}</div>`
+                })
+                tags += content.date;
+                article.innerHTML = `<div class="article" style="cursor:pointer;"><img src="${content.image[0] === "h" ? content.image : "images/" + content.image}"><div class="container"><h3>${content.title}</h3><p>${content.description}</p><span class="tags">${tags}</span><button onclick="window.location.href = '${content.id[0] !== "h" ? "articles/index.html?id=" + content.id : content.id}'">Read More</button></div></div>`;
+                document.getElementById("articles").appendChild(article);
+            })
+        }).catch(err=> qi("articles").innerHTML += "<center><h2>Error: " + err +"</h2></center>")
     </script>
+
 </body>
 
 </html>
